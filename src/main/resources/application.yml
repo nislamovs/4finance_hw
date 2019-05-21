@@ -1,0 +1,26 @@
+
+#BUSINESS LOGIC
+
+loan:
+  currency: "EUR"
+  minimum: 100
+  maximum: 500000
+  application:
+    max_attempts_from_one_ip: 3
+  interest:
+    normal: 0.04          # year interest is 4%
+    extended: 0.015       #week interest is 1.5%
+
+#COMMON SYSTEM CONFIGURATION
+
+application:
+  version: v 1.0.0
+  deploymentdate: 2018-09-11 21:15:29
+  support.email: nizamiislamovs@gmail.com
+
+spring:
+  profiles:
+    active: prod
+
+logging.level.org.hibernate.SQL: DEBUG
+logging.level.org.hibernate.type.descriptor.sql.BasicBinder: TRACE
