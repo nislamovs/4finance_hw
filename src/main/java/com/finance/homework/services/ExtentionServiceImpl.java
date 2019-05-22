@@ -11,9 +11,12 @@ import com.finance.homework.repository.ExtentionRepository;
 import com.finance.homework.repository.LoanRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.List;
 import java.util.Optional;
 
@@ -28,6 +31,9 @@ public class ExtentionServiceImpl implements ExtentionService {
     @Autowired
     LoanRepository loanRepository;
 
+    @Value("${loan.interest.extended}")
+    BigDecimal weekInterest;
+
     @Override
     public List<ExtentionEntity> findAllExtentions() {
         return extentionRepository.findAll();
@@ -41,7 +47,29 @@ public class ExtentionServiceImpl implements ExtentionService {
         ExtentionEntity newExtention = ExtentionConverter.toEntity(extentionRequest);
         newExtention.setLoanEntity(LoanEntity.builder().id(extentionRequest.getLoan_pk()).build());
 
+        //debt recalculation
+
+        LoanEntity loan = loanRepository.getOne(extentionRequest.getLoan_pk());
+        BigDecimal totalDebt = calculateAmountForExtention(loan.getLoanAmount(), extentionRequest.getExtentionDays());
+        totalDebt = totalDebt.add(loan.getDebt());
+        loan.setDebt(totalDebt);
+        loanRepository.save(loan);
+
         return extentionRepository.save(newExtention);
+    }
+
+    @Override
+    public BigDecimal calculateAmountForExtention(BigDecimal loanAmount, int extentionTerm) {
+
+//        Extended Debt = loanAmount * (1.5% / 7 * extentionTerm)
+
+        BigDecimal extendedDebt = weekInterest;
+        extendedDebt = extendedDebt.multiply(new BigDecimal(extentionTerm));
+        extendedDebt = extendedDebt.divide(new BigDecimal(7), 10, RoundingMode.CEILING);
+        extendedDebt = extendedDebt.multiply(loanAmount);
+        extendedDebt = extendedDebt.setScale(2, RoundingMode.CEILING);
+
+        return extendedDebt;
     }
 
     @Override

@@ -2,7 +2,6 @@
 #BUSINESS LOGIC
 
 loan:
-  currency: "EUR"
   minimum: 100
   maximum: 500000
   application:
@@ -20,7 +19,7 @@ application:
 
 spring:
   profiles:
-    active: prod
+    active: dev
 
 logging.level.org.hibernate.SQL: DEBUG
 logging.level.org.hibernate.type.descriptor.sql.BasicBinder: TRACE

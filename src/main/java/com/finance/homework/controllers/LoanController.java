@@ -25,21 +25,13 @@ import java.util.List;
 @RequestMapping(value = "/api/v1/loan")
 public class LoanController implements LoanControllerDoc {
 
-
     @Autowired
     LoanService loanService;
 
-    @GetMapping(value = "/test")
+    @GetMapping(value = "/processLoans")
     public void test() {
-
-        log.info("test   test   test   test   test   test   test   test   test   ");
-
+        //Only for testing
         loanService.processLoans();
-//        loanService.calculateDebt(new BigDecimal(100000), 100);
-
-
-//        return new ResponseEntity<Integer>(userService.blockUsersByLoanRequestCount(3), HttpStatus.OK);
-//        return new ResponseEntity<Integer>(loanService.manageMidnightMaximalLoanAmounts(BigDecimal.valueOf(500000)), HttpStatus.OK);
     }
 
     @GetMapping
