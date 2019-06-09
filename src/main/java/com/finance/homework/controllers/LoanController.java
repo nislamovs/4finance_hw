@@ -8,7 +8,10 @@ import com.finance.homework.domain.exceptions.LoanNotFoundException;
 import com.finance.homework.domain.exceptions.UserNotFoundException;
 import com.finance.homework.domain.requests.LoanRequest;
 import com.finance.homework.domain.responses.LoanResponse;
+import com.finance.homework.model.LoanEntity;
 import com.finance.homework.services.LoanService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiParam;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -28,22 +31,15 @@ public class LoanController implements LoanControllerDoc {
     @Autowired
     LoanService loanService;
 
-    @GetMapping(value = "/processLoans")
-    public void test() {
-        //Only for testing
-        loanService.processLoans();
-    }
-
     @GetMapping
     public ResponseEntity<?> getAllLoans() {
 
         log.info("Retrieving loan list for all users.");
-
         return new ResponseEntity<List<LoanResponse>>(LoanConverter.toResponse(loanService.findAllLoans()), HttpStatus.OK);
     }
 
     @GetMapping(value = "/{loanId}")
-    public ResponseEntity<?> getLoanById(@PathVariable String loanId) throws LoanNotFoundException {
+    public ResponseEntity<?> getLoanById(@PathVariable String loanId) {
 
         log.info("Retrieving loan by id {}.", loanId);
 
@@ -51,8 +47,7 @@ public class LoanController implements LoanControllerDoc {
     }
 
     @PostMapping
-    @Transactional
-    public ResponseEntity<?> createLoan(@Valid @RequestBody LoanRequest loanRequest, HttpServletRequest request) throws UserNotFoundException {
+    public ResponseEntity<?> createLoan(@Valid @RequestBody LoanRequest loanRequest, HttpServletRequest request) {
 
         log.info("Extending loan : {}", loanRequest);
 
@@ -62,12 +57,15 @@ public class LoanController implements LoanControllerDoc {
     }
 
     @PutMapping(value = "/{loanId}")
-    @Transactional
     public ResponseEntity<?> changeLoanStatus(@PathVariable String loanId,
-                                              @RequestParam("status") LoanStatus status) throws LoanNotFoundException, InvalidStatusException {
+                                              @ApiParam(required = true, defaultValue = "MANUAL_CHECK",
+                                                      allowableValues = "PENDING, APPROVED, REJECTED, PAYED_OFF, SENT_TO_COLLECTION, MANUAL_CHECK",
+                                                      example = "REJECTED")  //Neccessary to put it here to make possible visualise available values
+                                                                             //Swagger does not inherit annotations from interface (long term bug)
+                                              @RequestParam("status") String status) {
 
-        log.info("Changing loan id:{} status to: {}", loanId, status.toString());
+        log.info("Changing loan id:{} status to: {}", loanId, status);
 
-        return new ResponseEntity<LoanResponse>(LoanConverter.toResponse(loanService.updateStatus(loanId, status.toString())), HttpStatus.ACCEPTED);
+        return new ResponseEntity<LoanResponse>(LoanConverter.toResponse(loanService.updateStatus(loanId, status)), HttpStatus.ACCEPTED);
     }
 }

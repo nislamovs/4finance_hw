@@ -1,8 +1,10 @@
 package com.finance.homework.configuration;
 
 import com.google.common.base.Predicate;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import springfox.documentation.builders.ApiInfoBuilder;
@@ -20,8 +22,15 @@ import static springfox.documentation.builders.PathSelectors.regex;
 @EnableSwagger2
 public class SwaggerConfiguration implements WebMvcConfigurer {
 
+    @Value(value = "${application.developer}") String developer;
+    @Value(value = "${application.support.email}") String email;
+    @Value(value = "${application.version}") String version;
+    @Value(value = "${application.description}") String description;
+    @Value(value = "${application.title}") String title;
+
+
     @Bean
-    public Docket postsApi() {
+    public Docket loansApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .useDefaultResponseMessages(false)
                 .apiInfo(apiInfo())
@@ -39,10 +48,10 @@ public class SwaggerConfiguration implements WebMvcConfigurer {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("Loan application REST API")
-                .description("4Finance hometask")
-                .contact(new Contact("Nizami Islamovs", "", "nizamiislamovs@gmail.com"))
-                .version("1.0").build();
+                .title(title)
+                .description(description)
+                .contact(new Contact( developer, "", email))
+                .version(version).build();
     }
 
     @Override

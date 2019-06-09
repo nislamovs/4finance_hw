@@ -44,11 +44,4 @@ public class LoanEntity extends BaseEntity {
     @JoinColumn(name = "user_pk")
     private UserEntity userEntity;
 
-//    @ManyToOne
-//    @JoinColumn(name = "user_pk")
-//    private Long user_pk;
-
-//    @Column(name="user_pk", nullable=false)
-//    private Long user_pk;
-
 }

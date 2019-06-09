@@ -9,17 +9,27 @@ loan:
   interest:
     normal: 0.04          # year interest is 4%
     extended: 0.015       #week interest is 1.5%
+  extention:
+    min: 1
+    max: 365
 
 #COMMON SYSTEM CONFIGURATION
 
 application:
+  developer: Nizami Islamovs
   version: v 1.0.0
   deploymentdate: 2018-09-11 21:15:29
   support.email: nizamiislamovs@gmail.com
+  description: 4Finance hometask
+  title: Loan application REST API
 
 spring:
   profiles:
     active: dev
 
-logging.level.org.hibernate.SQL: DEBUG
-logging.level.org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+#logging.level.org.hibernate.SQL: DEBUG
+#logging.level.org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+
+logging.level.ROOT: INFO
+logging.level.org.springframework.orm.jpa: DEBUG
+logging.level.org.springframework.transaction: TRACE

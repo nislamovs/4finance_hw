@@ -3,13 +3,14 @@ package com.finance.homework.domain.enums;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonValue;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import io.swagger.annotations.ApiParam;
+import lombok.*;
 
 @AllArgsConstructor
+@NoArgsConstructor
 @JsonFormat(shape = JsonFormat.Shape.OBJECT)
-//@ApiModel
 public enum LoanStatus {
 
     PENDING(1, "pending"),
@@ -23,6 +24,6 @@ public enum LoanStatus {
     @Getter @Setter private Integer id;
 
     @JsonValue
-//    @ApiModelProperty(allowableValues = "pending, approved, rejected, payed_off, sent_to_collection")
+//    @ApiModelProperty(dataType = "string", allowableValues = "pending, approved, rejected, payed_off, sent_to_collection")
     @Getter @Setter private String status;
 }

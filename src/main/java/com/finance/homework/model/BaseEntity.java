@@ -10,6 +10,7 @@ import javax.persistence.Column;
 import javax.persistence.EntityListeners;
 import javax.persistence.MappedSuperclass;
 import javax.persistence.Temporal;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 import static javax.persistence.TemporalType.TIMESTAMP;
@@ -20,13 +21,11 @@ import static javax.persistence.TemporalType.TIMESTAMP;
 public abstract class BaseEntity {
 
     @CreatedDate
-    @Temporal(TIMESTAMP)
     @Column(name = "created_date", nullable = false, updatable = false)
-    private Date createdDate;
+    private LocalDateTime createdDate;
 
     @LastModifiedDate
-    @Temporal(TIMESTAMP)
     @Column(name = "last_modified_date")
-    private Date lastModifiedDate;
+    private LocalDateTime lastModifiedDate;
 
 }

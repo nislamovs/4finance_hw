@@ -7,6 +7,7 @@ import com.finance.homework.domain.responses.UserResponse;
 import io.swagger.annotations.*;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.transaction.annotation.Transactional;
 
 @Api(tags = { "User management" },  description = "Api calls for user operations")
 public interface UserControllerDoc {
@@ -24,6 +25,7 @@ public interface UserControllerDoc {
             @ApiResponse(code = 200, message = "All users with their data are retrieved.", response = UserResponse.class),
             @ApiResponse(code = 400, message = "Something went wrong.", response = ErrorResponse.class)
     })
+    @Transactional
     ResponseEntity<?> getAllUserList();
 
 
@@ -39,6 +41,7 @@ public interface UserControllerDoc {
             @ApiResponse(code = 201, message = "User created.", response = UserResponse.class),
             @ApiResponse(code = 400, message = "Something went wrong.", response = ErrorResponse.class)
     })
+    @Transactional
     ResponseEntity<?> createUser(@ApiParam(value = "UserRequest object", required = true, name = "User request") UserRequest userRequest);
 
 
@@ -55,5 +58,6 @@ public interface UserControllerDoc {
             @ApiResponse(code = 400, message = "Something went wrong.", response = ErrorResponse.class),
             @ApiResponse(code = 404, message = "User not found.", response = ErrorResponse.class)
     })
-    ResponseEntity<?> getUserLoans(@ApiParam(value = "ID", required = true, name = "User id", example = "5", defaultValue = "3") final String userId) throws UserNotFoundException;
+    @Transactional
+    ResponseEntity<?> getUserLoans(@ApiParam(value = "ID", required = true, name = "User id", example = "5", defaultValue = "3") String userId) throws UserNotFoundException;
 }

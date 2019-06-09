@@ -83,7 +83,7 @@ public class LoanServiceImpl implements LoanService {
         LoanEntity loan = loanRepository.getOne(Long.valueOf(loanId));
         loan.setStatus(LoanStatus.valueOf(status.toUpperCase()));
 
-        return loanRepository.saveAndFlush(loan);
+        return loanRepository.save(loan);
     }
 
     @Override

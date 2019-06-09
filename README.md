@@ -25,3 +25,8 @@ Create a simple micro-lending rest api app similar to one of our existing produc
 - Requirements are met
 - Code quality (both production and test)
 - How simple it is to run the application (embedded DB/embedded container)
+
+## Commands
+
+- ```gradle clean checkstyleMain --warning-mode all```
+- ```gradle clean checkstyleMain --warning-mode all```

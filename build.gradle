@@ -1,9 +1,141 @@
 plugins {
 	id 'org.springframework.boot' version '2.0.5.RELEASE'
 	id 'java'
+	id 'jacoco'
+	id 'findbugs'
+	id 'checkstyle'
+	id 'pmd'
+	id 'de.aaschmid.cpd' version '2.0'
+	id "gradle.site" version "0.6"
 }
 
+apply plugin: 'groovy'
 apply plugin: 'io.spring.dependency-management'
+apply plugin: 'findbugs'
+apply plugin: 'jacoco'
+apply plugin: 'checkstyle'
+apply plugin: 'pmd'
+apply plugin: 'de.aaschmid.cpd'
+apply plugin: 'gradle.site'
+
+site {
+	outputDir.set(file("${buildDir}/site"))
+//	websiteUrl.set("https://mysite.com")
+//	vcsUrl.set("https://github.com/my/repo.git")
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+findbugs {
+	ignoreFailures = true
+	toolVersion = "3.0.1"
+	sourceSets=[sourceSets.main]
+//	excludeFilter = file("${rootDir}/config/findbugs/excludeFilter.xml")
+	reportsDir = file("${buildDir}/reports/findbugs")
+	effort = "max"
+}
+
+tasks.withType(FindBugs) {
+	reports {
+		xml.enabled false
+		html.enabled true
+		html.stylesheet resources.text.fromFile("${rootDir}/config/xsl/findbugs-custom.xsl")
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+test {
+	useJUnitPlatform()
+	testLogging {
+		events 'PASSED', 'FAILED', 'SKIPPED'
+	}
+	finalizedBy(jacocoTestReport)
+}
+
+jacoco {
+	toolVersion = "0.8.3"
+	reportsDir = file("${buildDir}/reports/jacoco")
+}
+
+jacocoTestReport {
+	reports {
+		xml.enabled false
+		csv.enabled false
+		html.destination = file("${buildDir}/reports/coverage")
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+checkstyle {
+	toolVersion '8.21'
+	ignoreFailures = true
+	configFile = file("${rootDir}/config/checkstyle/checkstyle.xml")
+	reportsDir = file("${buildDir}/reports/checkstyle")
+}
+
+checkstyleMain {
+	source = "${rootDir}/src/main/java"
+}
+
+checkstyleTest {
+	source = "${rootDir}/src/test/java"
+}
+
+tasks.withType(Checkstyle) {
+	reports {
+		xml.enabled false
+		html.enabled true
+		html.stylesheet resources.text.fromFile("${rootDir}/config/xsl/checkstyle-custom.xsl")
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+pmd {
+	ignoreFailures = true
+	sourceSets = [sourceSets.main]
+	reportsDir = file("${buildDir}/reports/pmd")
+}
+
+tasks.withType(Pmd) {
+	reports {
+		xml.enabled false
+		html.enabled true
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+cpd {
+	skipLexicalErrors = true
+	minimumTokenCount = 1
+	language = 'java'
+	ignoreAnnotations = true
+}
+
+cpdCheck {
+	// ignoring CPD failures on purpose
+	ignoreFailures = true
+	source = sourceSets.main.allJava
+	reports {
+		xml {
+			enabled = true
+			destination = file("${buildDir}/reports/cpd/cpd.xml")
+		}
+	}
+}
+
+//task cpdHtmlReport {
+//	doLast {
+//		ant.xslt(in: "/home/perkele/Desktop/4finance_hw/build/reports/cpd/cpd.xml", style: new File("${rootDir}/config/cpd/cpdhtml.xslt"), out: new File("${buildDir}/reports/cpd/cpd.html"))
+//	}
+//}
+
+//cpdCheck.finalizedBy cpdHtmlReport
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 group = 'com.4finance'
 version = '0.0.1-SNAPSHOT'
@@ -11,11 +143,8 @@ sourceCompatibility = '1.8'
 
 repositories {
 	mavenCentral()
+	jcenter()
 }
-
-//test {
-//	useJUnitPlatform()
-//}
 
 dependencies {
 
@@ -29,16 +158,13 @@ dependencies {
 	implementation 		  'org.springframework.boot:spring-boot-starter'
 	implementation 		  'org.springframework.boot:spring-boot-starter-web'
 	implementation        "org.springframework.boot:spring-boot-starter-data-jpa"
-
-
-	implementation        "org.hibernate:hibernate-jpamodelgen:5.2.12.Final"
+	implementation        'org.springframework.boot:spring-boot-starter-logging'
+	implementation        'net.rakugakibox.spring.boot:logback-access-spring-boot-starter:2.7.1'
 
 //Swagger
-	implementation        "io.springfox:springfox-swagger-ui:2.9.2"
+	implementation        "io.springfox:springfox-swagger-ui:2.9.2"  //version 2.7.0 evaluates enums without bugs
 	implementation        "io.springfox:springfox-swagger2:2.9.2"
-	implementation        "io.swagger:swagger-annotations:1.5.21"
-//	implementation        "io.swagger:swagger-models:1.5.21"
-
+	implementation        "io.swagger:swagger-annotations:1.5.22"
 
 //Logging
 	implementation        "org.slf4j:jcl-over-slf4j"
@@ -51,9 +177,32 @@ dependencies {
 	implementation        "com.zaxxer:HikariCP"
 	implementation        "org.apache.commons:commons-lang3"
 	implementation        "org.modelmapper:modelmapper:2.3.2"
+	implementation        'org.codehaus.groovy:groovy'
 
 //Testing
-//	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
-//	testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
-	testCompile 'org.springframework.boot:spring-boot-starter-test'
+
+	def junit4Version   = '4.12'
+	def junitBomVersion = '5.4.2'
+
+	testImplementation(platform("org.junit:junit-bom:$junitBomVersion"))
+
+	// JUnit Jupiter API and TestEngine implementation
+	testImplementation("org.junit.jupiter:junit-jupiter")
+
+	testImplementation("junit:junit:${junit4Version}")
+	testRuntimeOnly("org.junit.vintage:junit-vintage-engine") {
+		because 'allows JUnit 3 and JUnit 4 tests to run'
+	}
+
+	testRuntimeOnly("org.junit.platform:junit-platform-launcher") {
+		because 'allows tests to run from IDEs that bundle older version of launcher'
+	}
+
+	testImplementation 'org.mockito:mockito-core:2.7.22'
+
+	testCompile 		  'org.springframework.boot:spring-boot-starter-test'
+	testCompile           'org.awaitility:awaitility:3.1.6'		//for scheduler testing
+
+	testCompile 		  "org.hamcrest:hamcrest-library:1.3"
+	testCompile 		  "com.jayway.jsonpath:json-path:2.2.0"
 }

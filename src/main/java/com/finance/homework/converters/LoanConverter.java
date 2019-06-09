@@ -13,8 +13,11 @@ public class LoanConverter {
 
     private static final ModelMapper mapper = new ModelMapper();
 
-    public static LoanResponse toResponse(LoanEntity loanEntity) {
+    public LoanConverter() {
         mapper.getConfiguration().setFieldMatchingEnabled(true);
+    }
+
+    public static LoanResponse toResponse(LoanEntity loanEntity) {
         return mapper.map(loanEntity, LoanResponse.class);
     }
 
@@ -23,7 +26,6 @@ public class LoanConverter {
     }
 
     public static LoanEntity toEntity(LoanRequest loanRequest) {
-        mapper.getConfiguration().setFieldMatchingEnabled(true);
         return mapper.map(loanRequest, LoanEntity.class);
     }
 }

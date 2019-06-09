@@ -3,10 +3,7 @@ package com.finance.homework.controllers;
 import com.finance.homework.domain.exceptions.*;
 import com.finance.homework.domain.responses.ErrorResponse;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.PropertySource;
-import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.web.HttpMediaTypeNotSupportedException;
@@ -17,23 +14,15 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import javax.xml.bind.ValidationException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+
+import static java.time.LocalDateTime.now;
 
 @Slf4j
 @RestControllerAdvice
-@PropertySource(value={"classpath:application.yml"})
 public class ExceptionHandlingController {
-
-    @Autowired
-    Environment environment;
 
     @Value("${application.support.email}")
     private String supportEmail;
-
-
-    private static final DateFormat DATETIME_FORMAT = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 
     @ResponseStatus(value = HttpStatus.BAD_REQUEST)
     @ExceptionHandler({
@@ -68,7 +57,7 @@ public class ExceptionHandlingController {
         log.error("Internal exception: ", ex);
 
         final String message = "Unexpected problem encountered. Please contact support team (" + supportEmail + ") with timestamp ["
-                + DATETIME_FORMAT.format(new Date()) + "] and short description.";
+                + now() + "] and short description.";
 
         return new ErrorResponse(message);
     }

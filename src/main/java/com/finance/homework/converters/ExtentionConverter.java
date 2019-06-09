@@ -13,8 +13,11 @@ public class ExtentionConverter {
 
     private static final ModelMapper mapper = new ModelMapper();
 
-    public static ExtentionResponse toResponse(ExtentionEntity extentionEntity) {
+    public ExtentionConverter() {
         mapper.getConfiguration().setFieldMatchingEnabled(true);
+    }
+
+    public static ExtentionResponse toResponse(ExtentionEntity extentionEntity) {
         return mapper.map(extentionEntity, ExtentionResponse.class);
     }
 
@@ -23,7 +26,6 @@ public class ExtentionConverter {
     }
 
     public static ExtentionEntity toEntity(ExtentionRequest extentionRequest) {
-        mapper.getConfiguration().setFieldMatchingEnabled(true);
         return mapper.map(extentionRequest, ExtentionEntity.class);
     }
 }

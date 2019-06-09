@@ -11,6 +11,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 
@@ -22,7 +23,7 @@ import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Builder
 @ApiModel
-public class UserResponse implements Serializable {
+public class UserResponse {
 
     @ApiModelProperty(required = true, value = "User id", example = "1")
     private Long id;
@@ -50,7 +51,7 @@ public class UserResponse implements Serializable {
     private List<LoanResponse> loans;
 
     @ApiModelProperty(required = true, value = "Creation date of current user")
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy HH:mm:ss z", timezone = "EET")
-    private Date createdDate;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy HH:mm:ss")
+    private LocalDateTime createdDate;
 
 }

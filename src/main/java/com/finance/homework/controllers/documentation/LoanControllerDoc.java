@@ -1,6 +1,5 @@
 package com.finance.homework.controllers.documentation;
 
-import com.finance.homework.domain.enums.LoanStatus;
 import com.finance.homework.domain.exceptions.InvalidStatusException;
 import com.finance.homework.domain.exceptions.LoanNotFoundException;
 import com.finance.homework.domain.exceptions.UserNotFoundException;
@@ -12,6 +11,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.websocket.server.PathParam;
 
 @Api(tags = { "Loan management" },  description = "Api calls for loan operations")
 public interface LoanControllerDoc {
@@ -76,6 +76,7 @@ public interface LoanControllerDoc {
             @ApiResponse(code = 404, message = "Loan not found.", response = ErrorResponse.class)
     })
     ResponseEntity<?> changeLoanStatus(@ApiParam(value = "Loan id", required = true, name = "Loan id", example = "3") String loanId,
-                                       @ApiParam(value = "Loan status", required = true, name = "Loan new status", example = "REJECTED") LoanStatus status)
+                                       @ApiParam(value = "Loan status", required = true, name = "Loan new status", defaultValue = "MANUAL_CHECK",
+                                               allowableValues = "PENDING, APPROVED, REJECTED, PAYED_OFF, SENT_TO_COLLECTION, MANUAL_CHECK", example = "REJECTED") String status)
             throws LoanNotFoundException, InvalidStatusException;
 }

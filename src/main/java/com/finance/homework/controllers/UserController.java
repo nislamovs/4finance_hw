@@ -7,6 +7,7 @@ import com.finance.homework.domain.exceptions.UserNotFoundException;
 import com.finance.homework.domain.requests.UserRequest;
 import com.finance.homework.domain.responses.UserResponse;
 import com.finance.homework.services.UserService;
+import io.swagger.annotations.ApiParam;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -34,8 +35,7 @@ public class UserController implements UserControllerDoc {
     }
 
     @PostMapping
-    @Transactional
-    public ResponseEntity<?> createUser(@Valid @RequestBody UserRequest userRequest) throws UserAlreadyExistsException {
+    public ResponseEntity<?> createUser(@Valid @RequestBody UserRequest userRequest) {
 
         log.info("Registering new user: {}", userRequest);
 
@@ -46,7 +46,7 @@ public class UserController implements UserControllerDoc {
 
 
     @GetMapping(value = "/{userId}")
-    public ResponseEntity<?> getUserLoans(@PathVariable final String userId) throws UserNotFoundException {
+    public ResponseEntity<?> getUserLoans(@PathVariable String userId) {
 
         log.info("Retrieving loans with extentions by user id: {}", userId);
 

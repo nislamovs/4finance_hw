@@ -35,8 +35,7 @@ public class LoanExtentionController implements ExtentionControllerDoc {
     }
 
     @PostMapping
-    @Transactional
-    public ResponseEntity<?> createExtention(@Valid @RequestBody ExtentionRequest extentionRequest) throws LoanNotFoundException {
+    public ResponseEntity<?> createExtention(@Valid @RequestBody ExtentionRequest extentionRequest) {
 
         log.info("Extending loan : {}", extentionRequest);
 
@@ -44,7 +43,7 @@ public class LoanExtentionController implements ExtentionControllerDoc {
     }
 
     @GetMapping(value = "/{extId}")
-    public ResponseEntity<?> getExtention(@PathVariable String extId) throws ExtentionNotFoundException {
+    public ResponseEntity<?> getExtention(@PathVariable String extId) {
 
         log.info("Retrieving extention by Id {}.", extId);
 

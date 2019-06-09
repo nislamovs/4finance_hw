@@ -5,6 +5,7 @@ import com.finance.homework.domain.requests.UserRequest;
 import com.finance.homework.domain.responses.UserResponse;
 import com.finance.homework.model.UserEntity;
 import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -13,8 +14,11 @@ public class UserConverter {
 
     private static final ModelMapper mapper = new ModelMapper();
 
-    public static UserResponse toResponse(UserEntity userEntity) {
+    public UserConverter() {
         mapper.getConfiguration().setFieldMatchingEnabled(true);
+    }
+
+    public static UserResponse toResponse(UserEntity userEntity) {
         return mapper.map(userEntity, UserResponse.class);
     }
 
@@ -23,7 +27,6 @@ public class UserConverter {
     }
 
     public static UserEntity toEntity(UserRequest userRequest) {
-        mapper.getConfiguration().setFieldMatchingEnabled(true);
         return mapper.map(userRequest, UserEntity.class);
     }
 }
