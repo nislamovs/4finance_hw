@@ -6,7 +6,7 @@ import com.finance.homework.domain.requests.LoanRequest;
 import com.finance.homework.domain.responses.LoanResponse;
 import com.finance.homework.model.LoanEntity;
 import com.finance.homework.services.LoanService;
-import org.hamcrest.text.IsEqualIgnoringCase;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -16,10 +16,11 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
 import javax.servlet.http.HttpServletRequest;
-import java.math.BigDecimal;
-import java.util.ArrayList;
 import java.util.List;
 
+import static com.finance.homework.testHelperClasses.LoanTestDataFactory.makeLoanList;
+import static com.finance.homework.testHelperClasses.LoanTestDataFactory.newLoanEntity;
+import static com.finance.homework.testHelperClasses.LoanTestDataFactory.newLoanRequest;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.text.IsEqualIgnoringCase.equalToIgnoringCase;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -92,27 +93,4 @@ public class LoanControllerTests {
         assertEquals(loanEntity.getId(), loanResponse.getId());
     }
 
-    private LoanEntity newLoanEntity() {
-        return LoanEntity.builder().id(1L).loanAmount(new BigDecimal(100000.0)).debt(new BigDecimal(111111.0))
-                .loanTerm(100).ipAddress("111.222.111.222").status(LoanStatus.MANUAL_CHECK).build();
-    }
-
-    private LoanRequest newLoanRequest() {
-        return LoanRequest.builder().user_pk(1L).loanAmount(new BigDecimal(100000.0)).loanTerm(250).build();
-    }
-
-    private List<LoanEntity> makeLoanList() {
-
-        List<LoanEntity> loanList = new ArrayList<>();
-        loanList.add(LoanEntity.builder().id(1L).loanAmount(new BigDecimal(100000.0))
-                .debt(new BigDecimal(101000.0)).status(LoanStatus.APPROVED).loanTerm(250).build());
-
-        loanList.add(LoanEntity.builder().id(2L).loanAmount(new BigDecimal(200000.0))
-                        .debt(new BigDecimal(201000.0)).status(LoanStatus.PENDING).loanTerm(150).build());
-
-        loanList.add(LoanEntity.builder().id(3L).loanAmount(new BigDecimal(300000.0))
-                .debt(new BigDecimal(301000.0)).status(LoanStatus.REJECTED).loanTerm(300).build());
-
-        return loanList;
-    }
 }

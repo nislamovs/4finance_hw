@@ -13,9 +13,11 @@ import org.mockito.junit.MockitoJUnitRunner;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
-import java.util.ArrayList;
 import java.util.List;
 
+import static com.finance.homework.testHelperClasses.ExtentionTestDataFactory.makeExtentionList;
+import static com.finance.homework.testHelperClasses.ExtentionTestDataFactory.newExtentionEntity;
+import static com.finance.homework.testHelperClasses.ExtentionTestDataFactory.newExtentionRequest;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
 
@@ -66,23 +68,5 @@ public class ExtentionControllerTests {
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertEquals(extentionResponse.getId(), extentionResponse.getId());
         assertEquals(extentionResponse.getExtentionDays(), extentionResponse.getExtentionDays());
-    }
-
-    private ExtentionRequest newExtentionRequest() {
-        return ExtentionRequest.builder().loan_pk(1L).extentionDays(100).build();
-    }
-
-    private ExtentionEntity newExtentionEntity() {
-        return ExtentionEntity.builder().id(1L).extentionDays(100).build();
-    }
-
-    private List<ExtentionEntity> makeExtentionList() {
-
-        List<ExtentionEntity> extentionList = new ArrayList<>();
-        extentionList.add(ExtentionEntity.builder().id(1L).extentionDays(10).build());
-        extentionList.add(ExtentionEntity.builder().id(2L).extentionDays(100).build());
-        extentionList.add(ExtentionEntity.builder().id(3L).extentionDays(200).build());
-
-        return extentionList;
     }
 }

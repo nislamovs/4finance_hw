@@ -54,10 +54,11 @@ public class LoanServiceImpl implements LoanService {
             throw new UserNotFoundException("User with id {" + loanRequest.getUser_pk() + "} not found.");
 
         LoanEntity newLoan = LoanConverter.toEntity(loanRequest);
+        UserEntity user = UserEntity.builder().id(loanRequest.getUser_pk()).build();
 
         newLoan.setStatus(LoanStatus.PENDING);
         newLoan.setDebt(BigDecimal.ZERO);
-        newLoan.setUserEntity(UserEntity.builder().id(loanRequest.getUser_pk()).build());
+        newLoan.setUserEntity(user);
 
         log.info("Creating new loan [entity]: {}", newLoan);
 
