@@ -21,9 +21,8 @@ public enum LoanStatus {
     MANUAL_CHECK(6, "manual_check");
 
     @JsonValue
-    @Getter @Setter private Integer id;
+    @Getter private Integer id;
 
     @JsonValue
-//    @ApiModelProperty(dataType = "string", allowableValues = "pending, approved, rejected, payed_off, sent_to_collection")
-    @Getter @Setter private String status;
+    @Getter private String status;
 }
