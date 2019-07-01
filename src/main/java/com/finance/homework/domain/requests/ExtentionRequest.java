@@ -8,12 +8,10 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.beans.factory.annotation.Value;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
-import java.io.Serializable;
 
 @Data @Builder
 @AllArgsConstructor
@@ -24,6 +22,7 @@ public class ExtentionRequest {
 
     @ApiModelProperty(required = true, value = "Loan id", example = "1")
     @JsonProperty("loanId")
+    @NotNull(message = "Loan id cannot be empty.")
     private Long loan_pk;
 
     @ApiModelProperty(required = true, value = "Loan extention term (days)", example = "3")

@@ -11,7 +11,6 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.websocket.server.PathParam;
 
 @Api(tags = { "Loan management" },  description = "Api calls for loan operations")
 public interface LoanControllerDoc {

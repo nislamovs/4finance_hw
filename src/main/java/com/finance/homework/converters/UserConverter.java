@@ -5,7 +5,6 @@ import com.finance.homework.domain.requests.UserRequest;
 import com.finance.homework.domain.responses.UserResponse;
 import com.finance.homework.model.UserEntity;
 import org.modelmapper.ModelMapper;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 import java.util.stream.Collectors;

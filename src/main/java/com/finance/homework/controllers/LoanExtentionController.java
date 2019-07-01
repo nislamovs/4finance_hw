@@ -2,8 +2,6 @@ package com.finance.homework.controllers;
 
 import com.finance.homework.controllers.documentation.ExtentionControllerDoc;
 import com.finance.homework.converters.ExtentionConverter;
-import com.finance.homework.domain.exceptions.ExtentionNotFoundException;
-import com.finance.homework.domain.exceptions.LoanNotFoundException;
 import com.finance.homework.domain.requests.ExtentionRequest;
 import com.finance.homework.domain.responses.ExtentionResponse;
 import com.finance.homework.services.ExtentionService;
@@ -11,7 +9,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;

@@ -2,21 +2,14 @@ package com.finance.homework.controllers;
 
 import com.finance.homework.controllers.documentation.LoanControllerDoc;
 import com.finance.homework.converters.LoanConverter;
-import com.finance.homework.domain.enums.LoanStatus;
-import com.finance.homework.domain.exceptions.InvalidStatusException;
-import com.finance.homework.domain.exceptions.LoanNotFoundException;
-import com.finance.homework.domain.exceptions.UserNotFoundException;
 import com.finance.homework.domain.requests.LoanRequest;
 import com.finance.homework.domain.responses.LoanResponse;
-import com.finance.homework.model.LoanEntity;
 import com.finance.homework.services.LoanService;
-import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiParam;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;

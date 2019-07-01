@@ -2,17 +2,13 @@ package com.finance.homework.controllers;
 
 import com.finance.homework.controllers.documentation.UserControllerDoc;
 import com.finance.homework.converters.UserConverter;
-import com.finance.homework.domain.exceptions.UserAlreadyExistsException;
-import com.finance.homework.domain.exceptions.UserNotFoundException;
 import com.finance.homework.domain.requests.UserRequest;
 import com.finance.homework.domain.responses.UserResponse;
 import com.finance.homework.services.UserService;
-import io.swagger.annotations.ApiParam;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;

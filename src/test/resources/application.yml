@@ -14,9 +14,12 @@ loan:
 #COMMON SYSTEM CONFIGURATION
 
 application:
+  developer: Nizami Islamovs
   version: v 1.0.0
   deploymentdate: 2018-09-11 21:15:29
   support.email: nizamiislamovs@gmail.com
+  description: 4Finance hometask
+  title: Loan application REST API
 
 spring:
   profiles:
