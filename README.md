@@ -1,12 +1,12 @@
 # homework-lv
 
 [![Build status][travis-image]][travis-url]
-[![Code Coverage][codecov-url]][codecov-image]
+[![Code Coverage][codecov-image]][codecov-url]
 
 [travis-url]: https://travis-ci.org/nizami2019/4finance_hw/builds
 [travis-image]: https://travis-ci.org/nizami2019/4finance_hw.svg?branch=master
-[codecov-url]: https://img.shields.io/codecov/c/github/nizami2019/4finance_hw/master.svg
-[codecov-image]: https://codecov.io/github/nizami2019/4finance_hw?branch=master
+[codecov-url]: https://codecov.io/gh/nizami2019/4finance_hw
+[codecov-image]: https://codecov.io/gh/nizami2019/4finance_hw/branch/master/graph/badge.svg
 
 ## Goal
 
