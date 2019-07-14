@@ -3,6 +3,7 @@
 [![Build status][travis-image]][travis-url]
 
 [travis-url]: https://travis-ci.org/nizami2019/4finance_hw/builds
+[travis-image]: https://travis-ci.org/nizami2019/4finance_hw.svg?branch=master
 
 ## Goal
 
