@@ -1,0 +1,37 @@
+ext {
+    apply plugin: 'de.aaschmid.cpd'
+
+    cpd {
+        skipLexicalErrors = true
+        minimumTokenCount = 1
+        language = 'java'
+        ignoreAnnotations = true
+    }
+
+    cpdCheck {
+        if (!project.hasProperty('runCPD')) {
+            enabled = false
+        }
+        // ignoring CPD failures on purpose
+        ignoreFailures = true
+//        source = sourceSets.main.allJava
+        reports {
+            xml {
+                enabled = true
+                destination = file("${buildDir}/reports/cpd/cpd.xml")
+            }
+            csv {
+                enabled = true
+                destination = file("${buildDir}/reports/cpd/cpd_csv.txt")
+            }
+        }
+    }
+
+    //task cpdHtmlReport {
+//	doLast {
+//		ant.xslt(in: "/home/perkele/Desktop/4finance_hw/build/reports/cpd/cpd.xml", style: new File("${rootDir}/config/cpd/cpdhtml.xslt"), out: new File("${buildDir}/reports/cpd/cpd.html"))
+//	}
+//}
+
+//cpdCheck.finalizedBy cpdHtmlReport
+}

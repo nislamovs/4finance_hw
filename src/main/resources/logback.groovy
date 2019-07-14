@@ -30,3 +30,4 @@ appender("STDOUT", ConsoleAppender) {
 
 root(INFO, ["FILE-ASYNC", "STDOUT"])
 logger("4Finance_hw", DEBUG)
+logger("org.springframework.web.filter.CommonsRequestLoggingFilter", DEBUG)

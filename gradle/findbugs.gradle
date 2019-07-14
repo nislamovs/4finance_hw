@@ -1,0 +1,20 @@
+ext {
+    apply plugin: 'findbugs'
+
+    findbugs {
+        sourceSets=[]
+        ignoreFailures = true
+        toolVersion = "3.0.1"
+        //	excludeFilter = file("${rootDir}/config/findbugs/excludeFilter.xml")
+        reportsDir = file("${buildDir}/reports/findbugs")
+        effort = "max"
+    }
+
+    tasks.withType(FindBugs) {
+        reports {
+            xml.enabled false
+            html.enabled true
+            html.stylesheet resources.text.fromFile("${rootDir}/config/xsl/findbugs-custom.xsl")
+        }
+    }
+}

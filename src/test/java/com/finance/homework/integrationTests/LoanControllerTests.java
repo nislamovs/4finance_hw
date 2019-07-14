@@ -4,6 +4,7 @@ import com.finance.homework.domain.enums.LoanStatus;
 import com.finance.homework.domain.requests.LoanRequest;
 import com.finance.homework.domain.requests.UserRequest;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.springframework.http.HttpStatus;
 
@@ -12,6 +13,7 @@ import static com.finance.homework.testHelperClasses.UserTestDataFactory.newUser
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 
+@Tag("integration-test")
 public class LoanControllerTests extends AbstractIntegrationTest {
 
     @Test
