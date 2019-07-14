@@ -1,5 +1,9 @@
 # homework-lv
 
+[![Build status][travis-image]][travis-url]
+
+[travis-url]: https://travis-ci.org/nizami2019/4finance_hw/builds
+
 ## Goal
 
 Create a simple micro-lending rest api app similar to one of our existing products.
