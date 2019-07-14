@@ -8,9 +8,13 @@ ext {
 
     jacocoTestReport {
         reports {
-            xml.enabled false
-            csv.enabled false
-            html.destination = file("${buildDir}/reports/coverage")
+            xml.enabled true
+            csv.enabled true
+            html.enabled true
+
+            xml.destination = file("${buildDir}/reports/coverage/xml/coverage.xml")
+            csv.destination = file("${buildDir}/reports/coverage/csv/coverage.csv")
+            html.destination = file("${buildDir}/reports/coverage/html/")
         }
     }
 }
