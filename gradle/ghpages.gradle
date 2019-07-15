@@ -1,8 +1,17 @@
 ext {
-    apply plugin: 'org.ajoberstar.github-pages'
+    apply plugin: "org.ajoberstar.git-publish"
 
-    githubPages {
+    gitPublish {
         repoUri = 'https://github.com/nizami2019/4finance_hw.git'
-        targetBranch = 'gh-pages' // defaults to gh-pages
+        branch = 'gh-pages' // defaults to gh-pages
+
+        contents {
+            from 'build/reports'
+            from(javadoc) {
+                into 'api'
+            }
+        }
+
+        commitMessage = 'Documentation generated.'
     }
 }

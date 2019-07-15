@@ -2,5 +2,17 @@ box: openjdk:8-jdk
 build:
   steps:
   - script:
+      name: building project
+      code: |
+        ./gradlew clean build
+  - script:
       name: run gatling tests
-      code: ./gradlew loadTest
+      code: |
+        ./gradlew loadTest
+
+deploy:
+  steps:
+  - script:
+      name: deploy github pages
+      code: |
+        ./gradlew gitPublishPush
