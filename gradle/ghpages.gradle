@@ -1,0 +1,8 @@
+ext {
+    apply plugin: 'org.ajoberstar.github-pages'
+
+    githubPages {
+        repoUri = 'https://github.com/nizami2019/4finance_hw.git'
+        targetBranch = 'gh-pages' // defaults to gh-pages
+    }
+}

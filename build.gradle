@@ -5,6 +5,7 @@ plugins {
 	id "gradle.site" version "0.6"
 	id 'de.aaschmid.cpd' version '2.0'
 	id "com.github.johnrengelman.processes" version "0.4.1"
+	id "org.ajoberstar.github-pages" version "1.7.2"
 }
 
 apply plugin: 'groovy'
@@ -20,6 +21,7 @@ apply from: "gradle/pmd.gradle"
 apply from: "gradle/findbugs.gradle"
 apply from: "gradle/cpd.gradle"
 apply from: "gradle/site.gradle"
+apply from: "gradle/ghpages.gradle"
 //apply from: "gradle/sonar.gradle"
 
 group = 'com.4finance'
