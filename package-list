@@ -1,0 +1,13 @@
+com.finance.homework
+com.finance.homework.configuration
+com.finance.homework.controllers
+com.finance.homework.controllers.documentation
+com.finance.homework.converters
+com.finance.homework.domain.enums
+com.finance.homework.domain.exceptions
+com.finance.homework.domain.requests
+com.finance.homework.domain.responses
+com.finance.homework.model
+com.finance.homework.repository
+com.finance.homework.schedulers
+com.finance.homework.services

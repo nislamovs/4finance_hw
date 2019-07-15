@@ -1,6 +1,0 @@
-box: openjdk:8-jdk
-build:
-  steps:
-  - script:
-      name: run gatling tests
-code: ./gradlew loadTest

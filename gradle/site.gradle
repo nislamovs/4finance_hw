@@ -1,9 +1,0 @@
-ext {
-    apply plugin: 'gradle.site'
-
-    site {
-        outputDir.set(file("${buildDir}/site"))
-        //	websiteUrl.set("https://mysite.com")
-        //	vcsUrl.set("https://github.com/my/repo.git")
-    }
-}
