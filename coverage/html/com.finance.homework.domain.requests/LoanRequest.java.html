@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>LoanRequest.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">homework</a> &gt; <a href="index.source.html" class="el_package">com.finance.homework.domain.requests</a> &gt; <span class="el_source">LoanRequest.java</span></div><h1>LoanRequest.java</h1><pre class="source lang-java linenums">package com.finance.homework.domain.requests;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import javax.validation.constraints.*;
+import java.math.BigDecimal;
+
+<span class="pc bpc" id="L15" title="19 of 38 branches missed.">@Data @Builder</span>
+<span class="fc" id="L16">@AllArgsConstructor</span>
+<span class="fc" id="L17">@NoArgsConstructor</span>
+@JsonIgnoreProperties(ignoreUnknown = true)
+@ApiModel
+public class LoanRequest {
+
+    @ApiModelProperty(required = true, value = &quot;User id&quot;, example = &quot;1&quot;)
+    @JsonProperty(&quot;userId&quot;)
+<span class="fc" id="L24">    private Long user_pk;</span>
+
+    @ApiModelProperty(required = true, value = &quot;Loan amount (EUR)&quot;, example = &quot;100000&quot;)
+    @DecimalMin(value = &quot;100&quot;, message = &quot;Loan amount should be min 100 and max 500000 EUR.&quot;)
+    @DecimalMax(value = &quot;500000&quot;, message = &quot;Loan amount should be min 100 and max 500000 EUR.&quot;)
+    @NotNull(message = &quot;Loan amount cannot be empty.&quot;)
+<span class="fc" id="L30">    private BigDecimal loanAmount;</span>
+
+    @ApiModelProperty(required = true, value = &quot;Loan term (days)&quot;, example = &quot;100&quot;)
+    @Min(value = 1, message = &quot;Loan term should be min 1 and max 365 days long.&quot;)
+    @Max(value = 365, message = &quot;Loan term should be min 1 and max 365 days long.&quot;)
+    @NotNull(message = &quot;Loan term cannot be empty.&quot;)
+<span class="fc" id="L36">    private Integer loanTerm;</span>
+
+    @ApiModelProperty(required = true, hidden=true, notes = &quot;Used to check request frequency&quot;)
+<span class="fc" id="L39">    private String ipAddress;</span>
+
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

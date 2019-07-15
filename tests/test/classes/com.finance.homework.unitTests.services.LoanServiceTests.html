@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.finance.homework.unitTests.services.LoanServiceTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.finance.homework.unitTests.services.LoanServiceTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.finance.homework.unitTests.services.html">com.finance.homework.unitTests.services</a> &gt; LoanServiceTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">12</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.167s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">shouldCalculateDebt</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldCreateNewLoan</td>
+<td class="success">0.110s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldManageMidnightMaximalLoanAmounts</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldProcessLoans</td>
+<td class="success">0.025s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldRetrieveAllLoans</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldRetrieveUserById</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldThrowExceptionOnCreatingNewLoan</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldThrowExceptionOnRetrievingLoanById</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldThrowExceptionOnUpdatingLoanStatus</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldThrowExceptionOnUpdatingLoanStatus_BlankStatus</td>
+<td class="success">0.020s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldThrowExceptionOnUpdatingLoanStatus_InvalidStatus</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldUpdateLoanStatusByUserId</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>16:53:18,669 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+16:53:18,670 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.groovy] at [file:/home/perkele/Desktop/4finance_hw/build/resources/main/logback.groovy]
+16:53:19,716 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@65911855 - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+16:53:19,718 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@65911855 - Naming appender as [FILE]
+16:53:19,873 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@2098687765 - Will use zip compression
+16:53:19,873 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@2098687765 - Will use the pattern 4Finance_hw_%d{dd-MM-yyyy}-%i.log for the active file
+16:53:19,875 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@1cd6509d - The date pattern is 'dd-MM-yyyy' from file name pattern '4Finance_hw_%d{dd-MM-yyyy}-%i.log.zip'.
+16:53:19,876 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@1cd6509d - Roll-over at midnight.
+16:53:19,878 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@1cd6509d - Setting initial period to Sun Jul 14 08:14:45 EEST 2019
+16:53:19,878 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@1cd6509d - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+16:53:19,878 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@1cd6509d - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+16:53:19,882 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Active log file name: logs/4Finance_hw.log
+16:53:19,882 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - File property is set to [logs/4Finance_hw.log]
+16:53:19,888 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@65911855 - About to instantiate appender of type [ch.qos.logback.classic.AsyncAppender]
+16:53:19,888 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@65911855 - Naming appender as [FILE-ASYNC]
+16:53:19,892 |-INFO in ch.qos.logback.classic.AsyncAppender[FILE-ASYNC] - Attaching appender named [FILE] to AsyncAppender.
+16:53:19,893 |-INFO in ch.qos.logback.classic.AsyncAppender[FILE-ASYNC] - Setting discardingThreshold to 0
+16:53:19,896 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@65911855 - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+16:53:19,897 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@65911855 - Naming appender as [STDOUT]
+16:53:19,903 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@65911855 - Setting level of logger [ROOT] to INFO
+16:53:19,909 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@65911855 - Attaching appender named [FILE-ASYNC] to Logger[ROOT]
+16:53:19,909 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@65911855 - Attaching appender named [STDOUT] to Logger[ROOT]
+16:53:19,909 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@65911855 - Setting level of logger [4Finance_hw] to DEBUG
+16:53:19,909 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@65911855 - Setting level of logger [org.springframework.web.filter.CommonsRequestLoggingFilter] to DEBUG
+
+2019-07-15 16:53:20,476 INFO  [Test worker] com.finance.homework.services.LoanServiceImpl - Creating new loan [request]: LoanRequest(user_pk=1, loanAmount=100000, loanTerm=250, ipAddress=111.222.111.222)
+2019-07-15 16:53:20,576 INFO  [Test worker] com.finance.homework.services.LoanServiceImpl - Creating new loan [entity]: LoanEntity(id=null, loanAmount=100000, debt=0, loanTerm=250, ipAddress=111.222.111.222, status=PENDING, extentions=null, userEntity=UserEntity(id=1, firstname=null, lastname=null, address=null, email=null, phone=null, isBlocked=false, loans=null))
+2019-07-15 16:53:20,586 INFO  [Test worker] com.finance.homework.services.LoanServiceImpl - Creating new loan [request]: LoanRequest(user_pk=1, loanAmount=100000, loanTerm=250, ipAddress=111.222.111.222)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.4.1</a> at Jul 15, 2019 4:53:22 PM</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ExtentionServiceImpl.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">homework</a> &gt; <a href="index.source.html" class="el_package">com.finance.homework.services</a> &gt; <span class="el_source">ExtentionServiceImpl.java</span></div><h1>ExtentionServiceImpl.java</h1><pre class="source lang-java linenums">package com.finance.homework.services;
+
+import com.finance.homework.converters.ExtentionConverter;
+import com.finance.homework.domain.enums.LoanStatus;
+import com.finance.homework.domain.exceptions.ExtentionNotFoundException;
+import com.finance.homework.domain.exceptions.LoanNotFoundException;
+import com.finance.homework.domain.requests.ExtentionRequest;
+import com.finance.homework.model.ExtentionEntity;
+import com.finance.homework.model.LoanEntity;
+import com.finance.homework.repository.ExtentionRepository;
+import com.finance.homework.repository.LoanRepository;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.util.List;
+import java.util.Optional;
+
+<span class="fc" id="L23">@Slf4j</span>
+@Service(&quot;extentionService&quot;)
+@Transactional
+<span class="fc" id="L26">public class ExtentionServiceImpl implements ExtentionService {</span>
+
+    @Autowired
+    ExtentionRepository extentionRepository;
+
+    @Autowired
+    LoanRepository loanRepository;
+
+    @Value(&quot;${loan.interest.extended}&quot;)
+    BigDecimal weekInterest;
+
+    @Override
+    public List&lt;ExtentionEntity&gt; findAllExtentions() {
+<span class="fc" id="L39">        return extentionRepository.findAll();</span>
+    }
+
+    @Override
+    public ExtentionEntity createExtention(ExtentionRequest extentionRequest) throws LoanNotFoundException {
+<span class="fc bfc" id="L44" title="All 2 branches covered.">        if (!loanRepository.existsLoanEntityByIdAndStatus(extentionRequest.getLoan_pk(), LoanStatus.APPROVED))</span>
+<span class="fc" id="L45">            throw new LoanNotFoundException(&quot;Loan with id {&quot; + extentionRequest.getLoan_pk() + &quot;} not found or not approved.&quot;);</span>
+
+<span class="fc" id="L47">        ExtentionEntity newExtention = ExtentionConverter.toEntity(extentionRequest);</span>
+<span class="fc" id="L48">        newExtention.setLoanEntity(LoanEntity.builder().id(extentionRequest.getLoan_pk()).build());</span>
+
+        //debt recalculation
+
+<span class="fc" id="L52">        LoanEntity loan = loanRepository.getOne(extentionRequest.getLoan_pk());</span>
+<span class="fc" id="L53">        BigDecimal totalDebt = calculateAmountForExtention(loan.getLoanAmount(), extentionRequest.getExtentionDays());</span>
+<span class="fc" id="L54">        totalDebt = totalDebt.add(loan.getDebt());</span>
+<span class="fc" id="L55">        loan.setDebt(totalDebt);</span>
+<span class="fc" id="L56">        loanRepository.save(loan);</span>
+
+<span class="fc" id="L58">        return extentionRepository.save(newExtention);</span>
+    }
+
+    @Override
+    public BigDecimal calculateAmountForExtention(BigDecimal loanAmount, int extentionTerm) {
+
+//        Extended Debt = loanAmount * (1.5% / 7 * extentionTerm)
+
+<span class="fc" id="L66">        BigDecimal extendedDebt = weekInterest;</span>
+<span class="fc" id="L67">        extendedDebt = extendedDebt.multiply(new BigDecimal(extentionTerm));</span>
+<span class="fc" id="L68">        extendedDebt = extendedDebt.divide(new BigDecimal(7), 10, RoundingMode.CEILING);</span>
+<span class="fc" id="L69">        extendedDebt = extendedDebt.multiply(loanAmount);</span>
+<span class="fc" id="L70">        extendedDebt = extendedDebt.setScale(2, RoundingMode.CEILING);</span>
+
+<span class="fc" id="L72">        return extendedDebt;</span>
+    }
+
+    @Override
+    public ExtentionEntity getExtentionById(String extentionId) throws ExtentionNotFoundException {
+<span class="fc" id="L77">        Optional&lt;ExtentionEntity&gt; extention = extentionRepository.findById(Long.valueOf(extentionId));</span>
+<span class="fc" id="L78">        extention.orElseThrow(() -&gt; new ExtentionNotFoundException(&quot;Extention with id [&quot; + extentionId + &quot;] not found.&quot;));</span>
+
+<span class="fc" id="L80">        return extention.get();</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

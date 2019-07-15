@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>UserEntity.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">homework</a> &gt; <a href="index.source.html" class="el_package">com.finance.homework.model</a> &gt; <span class="el_source">UserEntity.java</span></div><h1>UserEntity.java</h1><pre class="source lang-java linenums">package com.finance.homework.model;
+
+import lombok.*;
+
+import javax.persistence.*;
+import java.util.List;
+
+
+<span class="pc bpc" id="L9" title="19 of 68 branches missed.">@EqualsAndHashCode(callSuper = true)</span>
+<span class="fc" id="L10">@Data</span>
+<span class="pc" id="L11">@Builder</span>
+<span class="fc" id="L12">@NoArgsConstructor</span>
+<span class="fc" id="L13">@AllArgsConstructor</span>
+@Entity(name=&quot;users&quot;)
+@Table(name=&quot;users&quot;)
+public class UserEntity extends BaseEntity {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = &quot;ID&quot;, updatable = false, nullable = false)
+<span class="fc" id="L21">    private Long id;</span>
+
+    @Column(name=&quot;firstname&quot;, updatable = false, nullable=false)
+<span class="fc" id="L24">    private String firstname;</span>
+
+    @Column(name=&quot;lastname&quot;, updatable = false, nullable=false)
+<span class="fc" id="L27">    private String lastname;</span>
+
+    @Column(name=&quot;address&quot;, updatable = false, nullable=false)
+<span class="fc" id="L30">    private String address;</span>
+
+    @Column(name=&quot;email&quot;, updatable = false, nullable=false)
+<span class="fc" id="L33">    private String email;</span>
+
+    @Column(name=&quot;phone&quot;, updatable = false, nullable=false)
+<span class="fc" id="L36">    private String phone;</span>
+
+    @Column(name=&quot;is_blocked&quot;, updatable = true, nullable=false)
+<span class="fc" id="L39">    private boolean isBlocked;</span>
+
+    @OneToMany(mappedBy = &quot;userEntity&quot;, cascade = CascadeType.ALL)
+<span class="fc" id="L42">    private List&lt;LoanEntity&gt; loans;</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

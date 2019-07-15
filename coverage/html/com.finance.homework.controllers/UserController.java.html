@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>UserController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">homework</a> &gt; <a href="index.source.html" class="el_package">com.finance.homework.controllers</a> &gt; <span class="el_source">UserController.java</span></div><h1>UserController.java</h1><pre class="source lang-java linenums">package com.finance.homework.controllers;
+
+import com.finance.homework.controllers.documentation.UserControllerDoc;
+import com.finance.homework.converters.UserConverter;
+import com.finance.homework.domain.requests.UserRequest;
+import com.finance.homework.domain.responses.UserResponse;
+import com.finance.homework.services.UserService;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
+import java.util.List;
+
+<span class="fc" id="L17">@Slf4j</span>
+@RestController
+@RequestMapping(value = &quot;/api/v1/user&quot;)
+<span class="fc" id="L20">public class UserController implements UserControllerDoc {</span>
+
+    @Autowired
+    UserService userService;
+
+    @GetMapping
+    public ResponseEntity&lt;?&gt; getAllUserList() {
+
+<span class="fc" id="L28">        log.info(&quot;Retrieving user list with all loans and extentions.&quot;);</span>
+
+<span class="fc" id="L30">        return new ResponseEntity&lt;List&lt;UserResponse&gt;&gt;(UserConverter.toResponse(userService.findAllUsers()), HttpStatus.OK);</span>
+    }
+
+    @PostMapping
+    public ResponseEntity&lt;?&gt; createUser(@Valid @RequestBody UserRequest userRequest) {
+
+<span class="fc" id="L36">        log.info(&quot;Registering new user: {}&quot;, userRequest);</span>
+
+<span class="fc" id="L38">        UserResponse ur = UserConverter.toResponse(userService.createUser(userRequest));</span>
+
+<span class="fc" id="L40">        return new ResponseEntity&lt;UserResponse&gt;(ur , HttpStatus.CREATED);</span>
+    }
+
+
+    @GetMapping(value = &quot;/{userId}&quot;)
+    public ResponseEntity&lt;?&gt; getUserLoans(@PathVariable String userId) {
+
+<span class="fc" id="L47">        log.info(&quot;Retrieving loans with extentions by user id: {}&quot;, userId);</span>
+
+<span class="fc" id="L49">        return new ResponseEntity&lt;UserResponse&gt;(UserConverter.toResponse(userService.getLoanInfoByUserId(userId)), HttpStatus.OK);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

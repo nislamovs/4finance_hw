@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>RiskAnalysis.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">homework</a> &gt; <a href="index.source.html" class="el_package">com.finance.homework.schedulers</a> &gt; <span class="el_source">RiskAnalysis.java</span></div><h1>RiskAnalysis.java</h1><pre class="source lang-java linenums">package com.finance.homework.schedulers;
+
+import com.finance.homework.services.LoanService;
+import com.finance.homework.services.UserService;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.math.BigDecimal;
+
+@Service
+<span class="nc" id="L15">@Slf4j</span>
+<span class="nc" id="L16">public class RiskAnalysis {</span>
+
+    @Value(&quot;${loan.application.max_attempts_from_one_ip}&quot;)
+    int attempts;
+
+    @Value(&quot;${loan.maximum}&quot;)
+    BigDecimal maxAmount;
+
+    @Autowired
+    LoanService loanService;
+
+    @Autowired
+    UserService userService;
+
+    @Scheduled(cron = &quot;0 0 0 * * *&quot;)
+    @Transactional
+    public void checkForTooManyRequests() {
+<span class="nc" id="L33">        log.info(&quot;Checking for too many requests from single ip...&quot;);</span>
+
+<span class="nc" id="L35">        int result = userService.blockUsersByLoanRequestCount(attempts);</span>
+
+<span class="nc" id="L37">        log.info(&quot;Done with result : {}&quot;, result);</span>
+<span class="nc" id="L38">    }</span>
+
+    @Scheduled(cron = &quot;0 0 1 * * *&quot;)
+    @Transactional
+    public void checkForCrazyAttempts() {
+<span class="nc" id="L43">        log.info(&quot;Checking for the attempts to take loan after 00:00 with max possible amount...&quot;);</span>
+
+<span class="nc" id="L45">        int result = loanService.manageMidnightMaximalLoanAmounts(maxAmount);</span>
+
+<span class="nc" id="L47">        log.info(&quot;Done with result : {}&quot;, result);</span>
+<span class="nc" id="L48">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

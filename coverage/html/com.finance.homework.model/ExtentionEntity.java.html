@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ExtentionEntity.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">homework</a> &gt; <a href="index.source.html" class="el_package">com.finance.homework.model</a> &gt; <span class="el_source">ExtentionEntity.java</span></div><h1>ExtentionEntity.java</h1><pre class="source lang-java linenums">package com.finance.homework.model;
+
+import lombok.*;
+
+import javax.persistence.*;
+
+<span class="pc bpc" id="L7" title="9 of 32 branches missed.">@EqualsAndHashCode(callSuper = true)</span>
+<span class="pc" id="L8">@Data @Builder</span>
+<span class="fc" id="L9">@NoArgsConstructor</span>
+<span class="fc" id="L10">@AllArgsConstructor</span>
+@Entity(name = &quot;extentions&quot;)
+@Table(name = &quot;extentions&quot;)
+public class ExtentionEntity extends BaseEntity {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = &quot;ID&quot;, updatable = false, nullable = false)
+<span class="fc" id="L18">    private Long id;</span>
+
+    @Column(name=&quot;extention_period&quot;, nullable=false)
+<span class="fc" id="L21">    private Integer extentionDays;</span>
+
+    @ManyToOne
+    @JoinColumn(name = &quot;loan_pk&quot;)
+<span class="fc" id="L25">    private LoanEntity loanEntity;</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

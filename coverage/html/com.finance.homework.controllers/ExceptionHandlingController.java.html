@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ExceptionHandlingController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">homework</a> &gt; <a href="index.source.html" class="el_package">com.finance.homework.controllers</a> &gt; <span class="el_source">ExceptionHandlingController.java</span></div><h1>ExceptionHandlingController.java</h1><pre class="source lang-java linenums">package com.finance.homework.controllers;
+
+import com.finance.homework.domain.exceptions.*;
+import com.finance.homework.domain.responses.ErrorResponse;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.http.converter.HttpMessageNotReadableException;
+import org.springframework.web.HttpMediaTypeNotSupportedException;
+import org.springframework.web.HttpRequestMethodNotSupportedException;
+import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+import javax.xml.bind.ValidationException;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static java.time.LocalDateTime.now;
+
+<span class="fc" id="L24">@Slf4j</span>
+@RestControllerAdvice
+<span class="fc" id="L26">public class ExceptionHandlingController {</span>
+
+    @Value(&quot;${application.support.email}&quot;)
+    private String supportEmail;
+
+    @ResponseStatus(value = HttpStatus.NOT_FOUND)
+    @ExceptionHandler({
+            UserNotFoundException.class,
+            LoanNotFoundException.class,
+            ExtentionNotFoundException.class})
+    public ErrorResponse handleNotFoundException(RuntimeException ex) {
+
+<span class="fc" id="L38">        log.info(&quot;Bad request : Requested data not found &quot; + ex.getMessage());</span>
+
+<span class="fc" id="L40">        return new ErrorResponse(ex.getMessage());</span>
+    }
+
+    @ResponseStatus(value = HttpStatus.BAD_REQUEST)
+    @ExceptionHandler({
+            ValidationException.class,
+            InvalidStatusException.class,
+            UserAlreadyExistsException.class,
+            IllegalArgumentException.class,
+            HttpRequestMethodNotSupportedException.class,
+            HttpMediaTypeNotSupportedException.class,
+            HttpMessageNotReadableException.class})
+    public ErrorResponse handleBadRequests(Exception ex) {
+
+<span class="fc" id="L54">        log.info(&quot;Bad request : Request error &quot; + ex.getMessage());</span>
+
+<span class="fc" id="L56">        return new ErrorResponse(ex.getMessage());</span>
+    }
+
+    @ResponseStatus(value = HttpStatus.BAD_REQUEST)
+    @ExceptionHandler({MethodArgumentNotValidException.class})
+    public ResponseEntity&lt;List&lt;ErrorResponse&gt;&gt; handleValidationException(MethodArgumentNotValidException ex) {
+
+<span class="nc" id="L63">        log.info(&quot;Bad request : Validation error &quot; + ex.getMessage());</span>
+
+<span class="nc" id="L65">        return new ResponseEntity&lt;List&lt;ErrorResponse&gt;&gt;(processError(ex), HttpStatus.BAD_REQUEST);</span>
+    }
+
+
+
+    @ResponseStatus(value = HttpStatus.INTERNAL_SERVER_ERROR)
+    @ExceptionHandler(Exception.class)
+    public ErrorResponse handleGenericException(Exception ex) {
+
+<span class="fc" id="L74">        log.error(&quot;Internal exception: &quot;, ex);</span>
+
+<span class="fc" id="L76">        final String message = &quot;Unexpected problem encountered. Please contact support team (&quot; + supportEmail + &quot;) with timestamp [&quot;</span>
+<span class="fc" id="L77">                + now() + &quot;] and short description.&quot;;</span>
+
+<span class="fc" id="L79">        return new ErrorResponse(message);</span>
+    }
+
+    private List&lt;ErrorResponse&gt; processError(MethodArgumentNotValidException ex) {
+<span class="nc" id="L83">        List&lt;ErrorResponse&gt; errors = new ArrayList&lt;&gt;();</span>
+
+<span class="nc" id="L85">        ex.getBindingResult().getAllErrors().stream()</span>
+<span class="nc" id="L86">                .forEach(err -&gt; errors.add(new ErrorResponse(err.getDefaultMessage())));</span>
+
+<span class="nc" id="L88">        return errors;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

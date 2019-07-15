@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>LoanResponse.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">homework</a> &gt; <a href="index.source.html" class="el_package">com.finance.homework.domain.responses</a> &gt; <span class="el_source">LoanResponse.java</span></div><h1>LoanResponse.java</h1><pre class="source lang-java linenums">package com.finance.homework.domain.responses;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
+import java.util.List;
+
+import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL;
+
+<span class="pc bpc" id="L18" title="43 of 70 branches missed.">@Data</span>
+<span class="fc" id="L19">@AllArgsConstructor</span>
+<span class="fc" id="L20">@NoArgsConstructor</span>
+@JsonIgnoreProperties(ignoreUnknown = true)
+@ApiModel
+public class LoanResponse {
+
+    @ApiModelProperty(required = true, value = &quot;Loan Id&quot;)
+<span class="fc" id="L26">    private Long id;</span>
+
+    @ApiModelProperty(required = true, value = &quot;Loan amount&quot;)
+<span class="fc" id="L29">    private BigDecimal loanAmount;</span>
+
+    @ApiModelProperty(required = true, value = &quot;Loan term&quot;)
+<span class="fc" id="L32">    private Integer loanTerm;</span>
+
+    @ApiModelProperty(required = true, value = &quot;Loan status&quot;)
+<span class="fc" id="L35">    private String status;</span>
+
+    @ApiModelProperty(required = true, value = &quot;User total debt&quot;)
+<span class="fc" id="L38">    private BigDecimal debt;</span>
+
+    @ApiModelProperty(required = false, value = &quot;Loan extentions array&quot;)
+    @JsonInclude(NON_NULL)
+<span class="fc" id="L42">    private List&lt;ExtentionResponse&gt; loanExtentions;</span>
+
+    @ApiModelProperty(required = true, value = &quot;Creation date of current user&quot;)
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = &quot;dd-MM-yyyy HH:mm:ss&quot;)
+<span class="fc" id="L46">    private LocalDateTime createdDate;</span>
+
+    @ApiModelProperty(required = true, value = &quot;Modification date of current user&quot;)
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = &quot;dd-MM-yyyy HH:mm:ss&quot;)
+<span class="fc" id="L50">    private LocalDateTime modifiedDate;</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>
