@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.467s</div>
+<div class="counter">3.136s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,17 +79,17 @@
 </thead>
 <tr>
 <td class="success">shouldThrowGenericExceptionAndReturn500ResponseCode</td>
-<td class="success">0.034s</td>
+<td class="success">0.075s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldThrowUserAlreadyExistsExceptionAndReturn404ResponseCode</td>
-<td class="success">1.408s</td>
+<td class="success">3.007s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldThrowUserNotFoundExceptionAndReturn400ResponseCode</td>
-<td class="success">0.025s</td>
+<td class="success">0.054s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -97,28 +97,28 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2019-07-15 16:53:21,199 INFO  [Test worker] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1/user],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; com.finance.homework.controllers.UserController.createUser(com.finance.homework.domain.requests.UserRequest)
-2019-07-15 16:53:21,201 INFO  [Test worker] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1/user],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; com.finance.homework.controllers.UserController.getAllUserList()
-2019-07-15 16:53:21,202 INFO  [Test worker] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1/user/{userId}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; com.finance.homework.controllers.UserController.getUserLoans(java.lang.String)
-2019-07-15 16:53:21,830 INFO  [Test worker] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.12.Final
-2019-07-15 16:53:22,034 INFO  [Test worker] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@12761332
-2019-07-15 16:53:22,091 INFO  [Test worker] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in com.finance.homework.controllers.ExceptionHandlingController#44b71f5a
-2019-07-15 16:53:22,118 INFO  [Test worker] org.springframework.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
-2019-07-15 16:53:22,118 INFO  [Test worker] org.springframework.test.web.servlet.TestDispatcherServlet - FrameworkServlet '': initialization started
-2019-07-15 16:53:22,122 INFO  [Test worker] org.springframework.test.web.servlet.TestDispatcherServlet - FrameworkServlet '': initialization completed in 4 ms
-2019-07-15 16:53:22,394 INFO  [Test worker] com.finance.homework.controllers.UserController - Registering new user: UserRequest(firstname=JohnTest, lastname=DoeTest, address=Paper street 1, email=john.doe@test.com, phone=076455735735)
-2019-07-15 16:53:22,397 INFO  [Test worker] com.finance.homework.controllers.ExceptionHandlingController - Bad request : Request error User already exists.
-2019-07-15 16:53:22,411 WARN  [Test worker] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [com.finance.homework.domain.exceptions.UserAlreadyExistsException: User already exists.]
-2019-07-15 16:53:22,422 INFO  [Test worker] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1/user],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; com.finance.homework.controllers.UserController.createUser(com.finance.homework.domain.requests.UserRequest)
-2019-07-15 16:53:22,422 INFO  [Test worker] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1/user],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; com.finance.homework.controllers.UserController.getAllUserList()
-2019-07-15 16:53:22,423 INFO  [Test worker] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1/user/{userId}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; com.finance.homework.controllers.UserController.getUserLoans(java.lang.String)
-2019-07-15 16:53:22,434 INFO  [Test worker] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@5a15e081
-2019-07-15 16:53:22,437 INFO  [Test worker] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in com.finance.homework.controllers.ExceptionHandlingController#5f4e9871
-2019-07-15 16:53:22,437 INFO  [Test worker] org.springframework.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
-2019-07-15 16:53:22,438 INFO  [Test worker] org.springframework.test.web.servlet.TestDispatcherServlet - FrameworkServlet '': initialization started
-2019-07-15 16:53:22,438 INFO  [Test worker] org.springframework.test.web.servlet.TestDispatcherServlet - FrameworkServlet '': initialization completed in 0 ms
-2019-07-15 16:53:22,442 INFO  [Test worker] com.finance.homework.controllers.UserController - Retrieving loans with extentions by user id: 1
-2019-07-15 16:53:22,445 ERROR [Test worker] com.finance.homework.controllers.ExceptionHandlingController - Internal exception: 
+<pre>2019-07-15 18:03:43,504 INFO  [Test worker] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1/user],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; com.finance.homework.controllers.UserController.createUser(com.finance.homework.domain.requests.UserRequest)
+2019-07-15 18:03:43,508 INFO  [Test worker] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1/user],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; com.finance.homework.controllers.UserController.getAllUserList()
+2019-07-15 18:03:43,509 INFO  [Test worker] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1/user/{userId}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; com.finance.homework.controllers.UserController.getUserLoans(java.lang.String)
+2019-07-15 18:03:44,701 INFO  [Test worker] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.12.Final
+2019-07-15 18:03:45,210 INFO  [Test worker] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@76afec3f
+2019-07-15 18:03:45,345 INFO  [Test worker] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in com.finance.homework.controllers.ExceptionHandlingController#43ddc9d3
+2019-07-15 18:03:45,408 INFO  [Test worker] org.springframework.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+2019-07-15 18:03:45,409 INFO  [Test worker] org.springframework.test.web.servlet.TestDispatcherServlet - FrameworkServlet '': initialization started
+2019-07-15 18:03:45,417 INFO  [Test worker] org.springframework.test.web.servlet.TestDispatcherServlet - FrameworkServlet '': initialization completed in 8 ms
+2019-07-15 18:03:46,022 INFO  [Test worker] com.finance.homework.controllers.UserController - Registering new user: UserRequest(firstname=JohnTest, lastname=DoeTest, address=Paper street 1, email=john.doe@test.com, phone=076455735735)
+2019-07-15 18:03:46,028 INFO  [Test worker] com.finance.homework.controllers.ExceptionHandlingController - Bad request : Request error User already exists.
+2019-07-15 18:03:46,058 WARN  [Test worker] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [com.finance.homework.domain.exceptions.UserAlreadyExistsException: User already exists.]
+2019-07-15 18:03:46,086 INFO  [Test worker] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1/user],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; com.finance.homework.controllers.UserController.createUser(com.finance.homework.domain.requests.UserRequest)
+2019-07-15 18:03:46,087 INFO  [Test worker] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1/user],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; com.finance.homework.controllers.UserController.getAllUserList()
+2019-07-15 18:03:46,089 INFO  [Test worker] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1/user/{userId}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; com.finance.homework.controllers.UserController.getUserLoans(java.lang.String)
+2019-07-15 18:03:46,115 INFO  [Test worker] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@3b47c2
+2019-07-15 18:03:46,121 INFO  [Test worker] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in com.finance.homework.controllers.ExceptionHandlingController#3009e92
+2019-07-15 18:03:46,121 INFO  [Test worker] org.springframework.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+2019-07-15 18:03:46,122 INFO  [Test worker] org.springframework.test.web.servlet.TestDispatcherServlet - FrameworkServlet '': initialization started
+2019-07-15 18:03:46,122 INFO  [Test worker] org.springframework.test.web.servlet.TestDispatcherServlet - FrameworkServlet '': initialization completed in 0 ms
+2019-07-15 18:03:46,133 INFO  [Test worker] com.finance.homework.controllers.UserController - Retrieving loans with extentions by user id: 1
+2019-07-15 18:03:46,138 ERROR [Test worker] com.finance.homework.controllers.ExceptionHandlingController - Internal exception: 
 java.lang.NullPointerException: Magic error
 	at com.finance.homework.controllers.UserController.getUserLoans(UserController.java:49)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -172,8 +172,8 @@ java.lang.NullPointerException: Magic error
 	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
 	at java.util.Iterator.forEachRemaining(Iterator.java:116)
 	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
 	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
 	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
 	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
@@ -214,18 +214,18 @@ java.lang.NullPointerException: Magic error
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
 	at java.lang.Thread.run(Thread.java:748)
-2019-07-15 16:53:22,451 WARN  [Test worker] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Magic error]
-2019-07-15 16:53:22,457 INFO  [Test worker] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1/user],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; com.finance.homework.controllers.UserController.createUser(com.finance.homework.domain.requests.UserRequest)
-2019-07-15 16:53:22,458 INFO  [Test worker] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1/user],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; com.finance.homework.controllers.UserController.getAllUserList()
-2019-07-15 16:53:22,458 INFO  [Test worker] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1/user/{userId}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; com.finance.homework.controllers.UserController.getUserLoans(java.lang.String)
-2019-07-15 16:53:22,468 INFO  [Test worker] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@df4580d
-2019-07-15 16:53:22,472 INFO  [Test worker] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in com.finance.homework.controllers.ExceptionHandlingController#1b3d7a93
-2019-07-15 16:53:22,472 INFO  [Test worker] org.springframework.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
-2019-07-15 16:53:22,472 INFO  [Test worker] org.springframework.test.web.servlet.TestDispatcherServlet - FrameworkServlet '': initialization started
-2019-07-15 16:53:22,473 INFO  [Test worker] org.springframework.test.web.servlet.TestDispatcherServlet - FrameworkServlet '': initialization completed in 0 ms
-2019-07-15 16:53:22,474 INFO  [Test worker] com.finance.homework.controllers.UserController - Retrieving loans with extentions by user id: 1111111
-2019-07-15 16:53:22,475 INFO  [Test worker] com.finance.homework.controllers.ExceptionHandlingController - Bad request : Requested data not found User not found.
-2019-07-15 16:53:22,477 WARN  [Test worker] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [com.finance.homework.domain.exceptions.UserNotFoundException: User not found.]
+2019-07-15 18:03:46,150 WARN  [Test worker] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException: Magic error]
+2019-07-15 18:03:46,166 INFO  [Test worker] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1/user],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; com.finance.homework.controllers.UserController.createUser(com.finance.homework.domain.requests.UserRequest)
+2019-07-15 18:03:46,167 INFO  [Test worker] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1/user],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; com.finance.homework.controllers.UserController.getAllUserList()
+2019-07-15 18:03:46,168 INFO  [Test worker] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped &quot;{[/api/v1/user/{userId}],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; com.finance.homework.controllers.UserController.getUserLoans(java.lang.String)
+2019-07-15 18:03:46,188 INFO  [Test worker] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@599c5fdb
+2019-07-15 18:03:46,195 INFO  [Test worker] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in com.finance.homework.controllers.ExceptionHandlingController#659684aa
+2019-07-15 18:03:46,196 INFO  [Test worker] org.springframework.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+2019-07-15 18:03:46,197 INFO  [Test worker] org.springframework.test.web.servlet.TestDispatcherServlet - FrameworkServlet '': initialization started
+2019-07-15 18:03:46,198 INFO  [Test worker] org.springframework.test.web.servlet.TestDispatcherServlet - FrameworkServlet '': initialization completed in 1 ms
+2019-07-15 18:03:46,201 INFO  [Test worker] com.finance.homework.controllers.UserController - Retrieving loans with extentions by user id: 1111111
+2019-07-15 18:03:46,203 INFO  [Test worker] com.finance.homework.controllers.ExceptionHandlingController - Bad request : Requested data not found User not found.
+2019-07-15 18:03:46,206 WARN  [Test worker] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - Resolved [com.finance.homework.domain.exceptions.UserNotFoundException: User not found.]
 </pre>
 </span>
 </div>
@@ -237,7 +237,7 @@ java.lang.NullPointerException: Magic error
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.4.1</a> at Jul 15, 2019 4:53:22 PM</p>
+<a href="http://www.gradle.org">Gradle 5.4.1</a> at Jul 15, 2019 3:03:46 PM</p>
 </div>
 </div>
 </body>

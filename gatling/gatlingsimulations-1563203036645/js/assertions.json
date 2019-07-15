@@ -1,0 +1,10 @@
+{
+  "simulation": "gatling.simulations.GatlingSimulations",
+  "simulationId": "gatlingsimulations",
+  "start": 1563203036645,
+  "description": "",
+  "scenarios": ["loanapi-user-registration-scenario", "loanapi-userdata-retrieval-scenario", "loanapi-call-healthcheck-scenario", "foo load test"],
+  "assertions": [
+
+  ]
+}

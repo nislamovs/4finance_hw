@@ -1,0 +1,856 @@
+RUN	gatling.simulations.GatlingSimulations		gatlingsimulations	1563203036645	 	2.0
+USER	loanapi-user-registration-scenario	1	START	1563203037967	1563203037967
+USER	loanapi-userdata-retrieval-scenario	11	START	1563203038059	1563203038059
+USER	loanapi-userdata-retrieval-scenario	12	START	1563203038063	1563203038063
+USER	loanapi-call-healthcheck-scenario	21	START	1563203038073	1563203038073
+USER	loanapi-call-healthcheck-scenario	22	START	1563203038081	1563203038081
+USER	foo load test	31	START	1563203038094	1563203038094
+USER	foo load test	32	START	1563203038117	1563203038117
+REQUEST	loanapi-userdata-retrieval-scenario	11		loanapi-userdata-retrieval-request	1563203038059	1563203038059	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-user-registration-scenario	2	START	1563203038175	1563203038175
+REQUEST	loanapi-user-registration-scenario	1		loanapi-user-registration-request	1563203038033	1563203038033	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-userdata-retrieval-scenario	13	START	1563203038182	1563203038182
+REQUEST	loanapi-userdata-retrieval-scenario	12		loanapi-userdata-retrieval-request	1563203038063	1563203038063	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-call-healthcheck-scenario	23	START	1563203038191	1563203038191
+REQUEST	loanapi-call-healthcheck-scenario	22		loanapi-call-healthcheck-request	1563203038081	1563203038081	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	21		loanapi-call-healthcheck-request	1563203038073	1563203038073	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	foo load test	31		Healthcheck	1563203038094	1563203038094	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	foo load test	33	START	1563203038213	1563203038213
+USER	foo load test	31	END	1563203038094	1563203038219
+REQUEST	foo load test	32		Healthcheck	1563203038124	1563203038124	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	2		loanapi-user-registration-request	1563203038176	1563203038176	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	foo load test	32	END	1563203038117	1563203038221
+REQUEST	loanapi-userdata-retrieval-scenario	12		loanapi-userdata-retrieval-request	1563203038195	1563203038195	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	11		loanapi-userdata-retrieval-request	1563203038180	1563203038180	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	13		loanapi-userdata-retrieval-request	1563203038182	1563203038182	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	foo load test	33		Healthcheck	1563203038213	1563203038213	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	foo load test	33	END	1563203038213	1563203038246
+REQUEST	loanapi-call-healthcheck-scenario	23		loanapi-call-healthcheck-request	1563203038192	1563203038192	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	22		loanapi-call-healthcheck-request	1563203038201	1563203038201	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-user-registration-scenario	3	START	1563203038270	1563203038270
+REQUEST	loanapi-user-registration-scenario	1		loanapi-user-registration-request	1563203038222	1563203038222	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	3		loanapi-user-registration-request	1563203038270	1563203038270	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	21		loanapi-call-healthcheck-request	1563203038277	1563203038277	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-userdata-retrieval-scenario	14	START	1563203038282	1563203038282
+REQUEST	loanapi-userdata-retrieval-scenario	14		loanapi-userdata-retrieval-request	1563203038282	1563203038282	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-call-healthcheck-scenario	24	START	1563203038291	1563203038291
+REQUEST	loanapi-call-healthcheck-scenario	24		loanapi-call-healthcheck-request	1563203038291	1563203038291	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	foo load test	34	START	1563203038311	1563203038311
+REQUEST	foo load test	34		Healthcheck	1563203038312	1563203038312	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	foo load test	34	END	1563203038311	1563203038317
+USER	loanapi-user-registration-scenario	4	START	1563203038372	1563203038372
+REQUEST	loanapi-user-registration-scenario	4		loanapi-user-registration-request	1563203038372	1563203038372	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	11		loanapi-userdata-retrieval-request	1563203038372	1563203038372	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-userdata-retrieval-scenario	15	START	1563203038381	1563203038381
+REQUEST	loanapi-userdata-retrieval-scenario	15		loanapi-userdata-retrieval-request	1563203038382	1563203038382	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	21		loanapi-call-healthcheck-request	1563203038392	1563203038392	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	3		loanapi-user-registration-request	1563203038393	1563203038393	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	foo load test	35	START	1563203038411	1563203038411
+USER	loanapi-call-healthcheck-scenario	25	START	1563203038411	1563203038411
+REQUEST	loanapi-call-healthcheck-scenario	25		loanapi-call-healthcheck-request	1563203038411	1563203038411	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	foo load test	35		Healthcheck	1563203038411	1563203038411	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	2		loanapi-user-registration-request	1563203038411	1563203038411	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	foo load test	35	END	1563203038411	1563203038415
+REQUEST	loanapi-call-healthcheck-scenario	23		loanapi-call-healthcheck-request	1563203038421	1563203038421	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	22		loanapi-call-healthcheck-request	1563203038431	1563203038431	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	11		loanapi-userdata-retrieval-request	1563203038461	1563203038461	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-user-registration-scenario	5	START	1563203038471	1563203038471
+REQUEST	loanapi-userdata-retrieval-scenario	14		loanapi-userdata-retrieval-request	1563203038471	1563203038471	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	12		loanapi-userdata-retrieval-request	1563203038471	1563203038471	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	5		loanapi-user-registration-request	1563203038471	1563203038471	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-userdata-retrieval-scenario	16	START	1563203038481	1563203038481
+REQUEST	loanapi-userdata-retrieval-scenario	16		loanapi-userdata-retrieval-request	1563203038481	1563203038481	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	13		loanapi-userdata-retrieval-request	1563203038482	1563203038482	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	1		loanapi-user-registration-request	1563203038492	1563203038492	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-call-healthcheck-scenario	26	START	1563203038511	1563203038511
+USER	foo load test	36	START	1563203038511	1563203038511
+REQUEST	foo load test	36		Healthcheck	1563203038511	1563203038511	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	26		loanapi-call-healthcheck-request	1563203038511	1563203038511	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	foo load test	36	END	1563203038511	1563203038515
+REQUEST	loanapi-userdata-retrieval-scenario	15		loanapi-userdata-retrieval-request	1563203038521	1563203038521	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	2		loanapi-user-registration-request	1563203038521	1563203038521	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	24		loanapi-call-healthcheck-request	1563203038561	1563203038561	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-user-registration-scenario	6	START	1563203038575	1563203038575
+REQUEST	loanapi-user-registration-scenario	6		loanapi-user-registration-request	1563203038575	1563203038575	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-userdata-retrieval-scenario	17	START	1563203038581	1563203038581
+REQUEST	loanapi-userdata-retrieval-scenario	17		loanapi-userdata-retrieval-request	1563203038582	1563203038582	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	13		loanapi-userdata-retrieval-request	1563203038592	1563203038592	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	23		loanapi-call-healthcheck-request	1563203038601	1563203038601	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	foo load test	37	START	1563203038611	1563203038611
+USER	loanapi-call-healthcheck-scenario	27	START	1563203038611	1563203038611
+REQUEST	foo load test	37		Healthcheck	1563203038611	1563203038611	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	foo load test	37	END	1563203038611	1563203038615
+REQUEST	loanapi-userdata-retrieval-scenario	12		loanapi-userdata-retrieval-request	1563203038611	1563203038611	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	27		loanapi-call-healthcheck-request	1563203038611	1563203038611	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	21		loanapi-call-healthcheck-request	1563203038622	1563203038622	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	22		loanapi-call-healthcheck-request	1563203038642	1563203038642	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	3		loanapi-user-registration-request	1563203038642	1563203038642	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-user-registration-scenario	7	START	1563203038671	1563203038671
+REQUEST	loanapi-user-registration-scenario	7		loanapi-user-registration-request	1563203038671	1563203038671	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	26		loanapi-call-healthcheck-request	1563203038671	1563203038671	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	25		loanapi-call-healthcheck-request	1563203038671	1563203038671	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-userdata-retrieval-scenario	18	START	1563203038681	1563203038681
+REQUEST	loanapi-userdata-retrieval-scenario	18		loanapi-userdata-retrieval-request	1563203038682	1563203038682	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	11		loanapi-userdata-retrieval-request	1563203038692	1563203038692	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	4		loanapi-user-registration-request	1563203038692	1563203038692	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-call-healthcheck-scenario	28	START	1563203038711	1563203038711
+USER	foo load test	38	START	1563203038711	1563203038711
+REQUEST	foo load test	38		Healthcheck	1563203038711	1563203038711	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	12		loanapi-userdata-retrieval-request	1563203038711	1563203038711	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	1		loanapi-user-registration-request	1563203038711	1563203038711	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	foo load test	38	END	1563203038711	1563203038715
+REQUEST	loanapi-call-healthcheck-scenario	28		loanapi-call-healthcheck-request	1563203038711	1563203038711	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	17		loanapi-userdata-retrieval-request	1563203038722	1563203038722	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	24		loanapi-call-healthcheck-request	1563203038722	1563203038722	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	2		loanapi-user-registration-request	1563203038722	1563203038722	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	14		loanapi-userdata-retrieval-request	1563203038762	1563203038762	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	21		loanapi-call-healthcheck-request	1563203038762	1563203038762	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-user-registration-scenario	8	START	1563203038771	1563203038771
+REQUEST	loanapi-user-registration-scenario	8		loanapi-user-registration-request	1563203038771	1563203038771	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	6		loanapi-user-registration-request	1563203038771	1563203038771	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	15		loanapi-userdata-retrieval-request	1563203038771	1563203038771	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	5		loanapi-user-registration-request	1563203038771	1563203038771	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-userdata-retrieval-scenario	19	START	1563203038781	1563203038781
+REQUEST	loanapi-userdata-retrieval-scenario	19		loanapi-userdata-retrieval-request	1563203038781	1563203038781	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	16		loanapi-userdata-retrieval-request	1563203038802	1563203038802	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	25		loanapi-call-healthcheck-request	1563203038802	1563203038802	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	26		loanapi-call-healthcheck-request	1563203038802	1563203038802	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-call-healthcheck-scenario	29	START	1563203038811	1563203038811
+USER	foo load test	39	START	1563203038811	1563203038811
+REQUEST	foo load test	39		Healthcheck	1563203038811	1563203038811	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	foo load test	39	END	1563203038811	1563203038814
+REQUEST	loanapi-call-healthcheck-scenario	29		loanapi-call-healthcheck-request	1563203038811	1563203038811	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	27		loanapi-call-healthcheck-request	1563203038861	1563203038861	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	7		loanapi-user-registration-request	1563203038861	1563203038861	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-user-registration-scenario	9	START	1563203038871	1563203038871
+REQUEST	loanapi-call-healthcheck-scenario	22		loanapi-call-healthcheck-request	1563203038871	1563203038871	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	3		loanapi-user-registration-request	1563203038871	1563203038871	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	9		loanapi-user-registration-request	1563203038871	1563203038871	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-userdata-retrieval-scenario	20	START	1563203038881	1563203038881
+REQUEST	loanapi-call-healthcheck-scenario	23		loanapi-call-healthcheck-request	1563203038881	1563203038881	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	20		loanapi-userdata-retrieval-request	1563203038881	1563203038881	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	18		loanapi-userdata-retrieval-request	1563203038881	1563203038881	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	13		loanapi-userdata-retrieval-request	1563203038892	1563203038892	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	4		loanapi-user-registration-request	1563203038892	1563203038892	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	6		loanapi-user-registration-request	1563203038901	1563203038901	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-call-healthcheck-scenario	30	START	1563203038911	1563203038911
+USER	foo load test	40	START	1563203038911	1563203038911
+REQUEST	foo load test	40		Healthcheck	1563203038911	1563203038911	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	30		loanapi-call-healthcheck-request	1563203038911	1563203038911	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	foo load test	40	END	1563203038911	1563203038914
+REQUEST	loanapi-user-registration-scenario	5		loanapi-user-registration-request	1563203038921	1563203038921	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	26		loanapi-call-healthcheck-request	1563203038932	1563203038932	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	12		loanapi-userdata-retrieval-request	1563203038932	1563203038932	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	2		loanapi-user-registration-request	1563203038933	1563203038933	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	24		loanapi-call-healthcheck-request	1563203038942	1563203038942	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	28		loanapi-call-healthcheck-request	1563203038951	1563203038951	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	7		loanapi-user-registration-request	1563203038961	1563203038961	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	16		loanapi-userdata-retrieval-request	1563203038961	1563203038961	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	1		loanapi-user-registration-request	1563203038961	1563203038961	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-user-registration-scenario	10	START	1563203038971	1563203038971
+REQUEST	loanapi-user-registration-scenario	10		loanapi-user-registration-request	1563203038972	1563203038972	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	11		loanapi-userdata-retrieval-request	1563203038972	1563203038972	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	14		loanapi-userdata-retrieval-request	1563203038991	1563203038991	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	23		loanapi-call-healthcheck-request	1563203038991	1563203038991	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	25		loanapi-call-healthcheck-request	1563203039001	1563203039001	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	17		loanapi-userdata-retrieval-request	1563203039011	1563203039011	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	29		loanapi-call-healthcheck-request	1563203039022	1563203039022	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	4		loanapi-user-registration-request	1563203039022	1563203039022	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	15		loanapi-userdata-retrieval-request	1563203039022	1563203039022	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	2		loanapi-user-registration-request	1563203039033	1563203039033	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	3		loanapi-user-registration-request	1563203039041	1563203039041	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	30		loanapi-call-healthcheck-request	1563203039041	1563203039041	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	21		loanapi-call-healthcheck-request	1563203039062	1563203039062	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	9		loanapi-user-registration-request	1563203039062	1563203039062	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	19		loanapi-userdata-retrieval-request	1563203039062	1563203039062	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	8		loanapi-user-registration-request	1563203039072	1563203039072	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	16		loanapi-userdata-retrieval-request	1563203039072	1563203039072	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	5		loanapi-user-registration-request	1563203039081	1563203039081	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	12		loanapi-userdata-retrieval-request	1563203039101	1563203039101	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	1		loanapi-user-registration-request	1563203039122	1563203039122	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	15		loanapi-userdata-retrieval-request	1563203039131	1563203039131	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	22		loanapi-call-healthcheck-request	1563203039131	1563203039131	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	13		loanapi-userdata-retrieval-request	1563203039141	1563203039141	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	23		loanapi-call-healthcheck-request	1563203039141	1563203039141	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	27		loanapi-call-healthcheck-request	1563203039141	1563203039141	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	20		loanapi-userdata-retrieval-request	1563203039152	1563203039152	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	17		loanapi-userdata-retrieval-request	1563203039152	1563203039152	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	28		loanapi-call-healthcheck-request	1563203039171	1563203039171	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	25		loanapi-call-healthcheck-request	1563203039171	1563203039171	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	18		loanapi-userdata-retrieval-request	1563203039171	1563203039171	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	6		loanapi-user-registration-request	1563203039171	1563203039171	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	19		loanapi-userdata-retrieval-request	1563203039182	1563203039182	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	14		loanapi-userdata-retrieval-request	1563203039192	1563203039192	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	8		loanapi-user-registration-request	1563203039192	1563203039192	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	29		loanapi-call-healthcheck-request	1563203039193	1563203039193	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	11		loanapi-userdata-retrieval-request	1563203039211	1563203039211	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	26		loanapi-call-healthcheck-request	1563203039211	1563203039211	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	24		loanapi-call-healthcheck-request	1563203039232	1563203039232	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	4		loanapi-user-registration-request	1563203039242	1563203039242	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	3		loanapi-user-registration-request	1563203039242	1563203039242	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	22		loanapi-call-healthcheck-request	1563203039261	1563203039261	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	7		loanapi-user-registration-request	1563203039261	1563203039261	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	27		loanapi-call-healthcheck-request	1563203039271	1563203039271	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	10		loanapi-user-registration-request	1563203039271	1563203039271	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	19		loanapi-userdata-retrieval-request	1563203039282	1563203039282	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	25		loanapi-call-healthcheck-request	1563203039291	1563203039291	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	30		loanapi-call-healthcheck-request	1563203039291	1563203039291	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	12		loanapi-userdata-retrieval-request	1563203039302	1563203039302	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	2		loanapi-user-registration-request	1563203039301	1563203039301	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	5		loanapi-user-registration-request	1563203039311	1563203039311	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	16		loanapi-userdata-retrieval-request	1563203039322	1563203039322	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	13		loanapi-userdata-retrieval-request	1563203039333	1563203039333	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	20		loanapi-userdata-retrieval-request	1563203039333	1563203039333	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	9		loanapi-user-registration-request	1563203039341	1563203039341	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	21		loanapi-call-healthcheck-request	1563203039349	1563203039349	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	8		loanapi-user-registration-request	1563203039351	1563203039351	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	6		loanapi-user-registration-request	1563203039361	1563203039361	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	14		loanapi-userdata-retrieval-request	1563203039361	1563203039361	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	28		loanapi-call-healthcheck-request	1563203039382	1563203039382	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	15		loanapi-userdata-retrieval-request	1563203039391	1563203039391	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	27		loanapi-call-healthcheck-request	1563203039391	1563203039391	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	29		loanapi-call-healthcheck-request	1563203039391	1563203039391	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	24		loanapi-call-healthcheck-request	1563203039412	1563203039412	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	1		loanapi-user-registration-request	1563203039412	1563203039412	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	25		loanapi-call-healthcheck-request	1563203039422	1563203039422	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	23		loanapi-call-healthcheck-request	1563203039422	1563203039422	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	11		loanapi-userdata-retrieval-request	1563203039431	1563203039431	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	4		loanapi-user-registration-request	1563203039451	1563203039451	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	17		loanapi-userdata-retrieval-request	1563203039451	1563203039451	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	26		loanapi-call-healthcheck-request	1563203039451	1563203039451	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	22		loanapi-call-healthcheck-request	1563203039462	1563203039462	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	7		loanapi-user-registration-request	1563203039462	1563203039462	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	2		loanapi-user-registration-request	1563203039462	1563203039462	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	3		loanapi-user-registration-request	1563203039462	1563203039462	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	18		loanapi-userdata-retrieval-request	1563203039462	1563203039462	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	6		loanapi-user-registration-request	1563203039471	1563203039471	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	8		loanapi-user-registration-request	1563203039471	1563203039471	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	30		loanapi-call-healthcheck-request	1563203039481	1563203039481	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	16		loanapi-userdata-retrieval-request	1563203039481	1563203039481	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	10		loanapi-user-registration-request	1563203039491	1563203039491	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	13		loanapi-userdata-retrieval-request	1563203039491	1563203039491	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	14		loanapi-userdata-retrieval-request	1563203039502	1563203039502	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	29		loanapi-call-healthcheck-request	1563203039521	1563203039521	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	28		loanapi-call-healthcheck-request	1563203039521	1563203039521	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	9		loanapi-user-registration-request	1563203039521	1563203039521	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	19		loanapi-userdata-retrieval-request	1563203039542	1563203039542	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	5		loanapi-user-registration-request	1563203039541	1563203039541	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	12		loanapi-userdata-retrieval-request	1563203039552	1563203039552	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	2		loanapi-user-registration-request	1563203039571	1563203039571	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	17		loanapi-userdata-retrieval-request	1563203039581	1563203039581	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	30		loanapi-call-healthcheck-request	1563203039581	1563203039581	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	3		loanapi-user-registration-request	1563203039591	1563203039591	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	15		loanapi-userdata-retrieval-request	1563203039591	1563203039591	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	27		loanapi-call-healthcheck-request	1563203039591	1563203039591	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	21		loanapi-call-healthcheck-request	1563203039591	1563203039591	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	8		loanapi-user-registration-request	1563203039591	1563203039591	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	25		loanapi-call-healthcheck-request	1563203039602	1563203039602	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	20		loanapi-userdata-retrieval-request	1563203039621	1563203039621	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	23		loanapi-call-healthcheck-request	1563203039632	1563203039632	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	28		loanapi-call-healthcheck-request	1563203039641	1563203039641	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	11		loanapi-userdata-retrieval-request	1563203039641	1563203039641	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	6		loanapi-user-registration-request	1563203039652	1563203039652	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	26		loanapi-call-healthcheck-request	1563203039652	1563203039652	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	1		loanapi-user-registration-request	1563203039662	1563203039662	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	14		loanapi-userdata-retrieval-request	1563203039671	1563203039671	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	5		loanapi-user-registration-request	1563203039681	1563203039681	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	24		loanapi-call-healthcheck-request	1563203039691	1563203039691	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	18		loanapi-userdata-retrieval-request	1563203039701	1563203039701	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	13		loanapi-userdata-retrieval-request	1563203039701	1563203039701	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	4		loanapi-user-registration-request	1563203039712	1563203039712	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	27		loanapi-call-healthcheck-request	1563203039712	1563203039712	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	8		loanapi-user-registration-request	1563203039712	1563203039712	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	10		loanapi-user-registration-request	1563203039721	1563203039721	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	17		loanapi-userdata-retrieval-request	1563203039721	1563203039721	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	23		loanapi-call-healthcheck-request	1563203039732	1563203039732	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	7		loanapi-user-registration-request	1563203039732	1563203039732	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	2		loanapi-user-registration-request	1563203039741	1563203039741	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	12		loanapi-userdata-retrieval-request	1563203039741	1563203039741	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	21		loanapi-call-healthcheck-request	1563203039741	1563203039741	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	22		loanapi-call-healthcheck-request	1563203039752	1563203039752	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	16		loanapi-userdata-retrieval-request	1563203039762	1563203039762	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	1		loanapi-user-registration-request	1563203039781	1563203039781	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	9		loanapi-user-registration-request	1563203039781	1563203039781	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	29		loanapi-call-healthcheck-request	1563203039781	1563203039781	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	8		loanapi-user-registration-request	1563203039821	1563203039821	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	19		loanapi-userdata-retrieval-request	1563203039831	1563203039831	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	13		loanapi-userdata-retrieval-request	1563203039831	1563203039831	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	30		loanapi-call-healthcheck-request	1563203039841	1563203039841	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	15		loanapi-userdata-retrieval-request	1563203039841	1563203039841	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	20		loanapi-userdata-retrieval-request	1563203039851	1563203039851	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	25		loanapi-call-healthcheck-request	1563203039851	1563203039851	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	28		loanapi-call-healthcheck-request	1563203039871	1563203039871	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	3		loanapi-user-registration-request	1563203039871	1563203039871	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	23		loanapi-call-healthcheck-request	1563203039871	1563203039871	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	10		loanapi-user-registration-request	1563203039881	1563203039881	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	6		loanapi-user-registration-request	1563203039891	1563203039891	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	2		loanapi-user-registration-request	1563203039891	1563203039891	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	4		loanapi-user-registration-request	1563203039902	1563203039902	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	24		loanapi-call-healthcheck-request	1563203039902	1563203039902	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	11		loanapi-userdata-retrieval-request	1563203039902	1563203039902	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	29		loanapi-call-healthcheck-request	1563203039912	1563203039912	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	7		loanapi-user-registration-request	1563203039912	1563203039912	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	22		loanapi-call-healthcheck-request	1563203039912	1563203039912	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	26		loanapi-call-healthcheck-request	1563203039921	1563203039921	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	27		loanapi-call-healthcheck-request	1563203039931	1563203039931	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	5		loanapi-user-registration-request	1563203039941	1563203039941	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	1		loanapi-user-registration-request	1563203039941	1563203039941	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	14		loanapi-userdata-retrieval-request	1563203039952	1563203039952	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	16		loanapi-userdata-retrieval-request	1563203039961	1563203039961	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	15		loanapi-userdata-retrieval-request	1563203039961	1563203039961	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	30		loanapi-call-healthcheck-request	1563203039981	1563203039981	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	9		loanapi-user-registration-request	1563203039981	1563203039981	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	11		loanapi-userdata-retrieval-request	1563203039991	1563203039991	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	18		loanapi-userdata-retrieval-request	1563203039991	1563203039991	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	12		loanapi-userdata-retrieval-request	1563203040002	1563203040002	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	21		loanapi-call-healthcheck-request	1563203040011	1563203040011	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	17		loanapi-userdata-retrieval-request	1563203040011	1563203040011	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	2		loanapi-user-registration-request	1563203040021	1563203040021	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	7		loanapi-user-registration-request	1563203040031	1563203040031	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	24		loanapi-call-healthcheck-request	1563203040042	1563203040042	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	22		loanapi-call-healthcheck-request	1563203040061	1563203040061	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	19		loanapi-userdata-retrieval-request	1563203040061	1563203040061	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	8		loanapi-user-registration-request	1563203040071	1563203040071	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	10		loanapi-user-registration-request	1563203040082	1563203040082	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	20		loanapi-userdata-retrieval-request	1563203040082	1563203040082	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	9		loanapi-user-registration-request	1563203040082	1563203040082	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	13		loanapi-userdata-retrieval-request	1563203040091	1563203040091	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	26		loanapi-call-healthcheck-request	1563203040091	1563203040091	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	6		loanapi-user-registration-request	1563203040091	1563203040091	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	16		loanapi-userdata-retrieval-request	1563203040112	1563203040112	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	15		loanapi-userdata-retrieval-request	1563203040111	1563203040111	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	3		loanapi-user-registration-request	1563203040122	1563203040122	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	1		loanapi-user-registration-request	1563203040122	1563203040122	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	18		loanapi-userdata-retrieval-request	1563203040122	1563203040122	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	5		loanapi-user-registration-request	1563203040122	1563203040122	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	29		loanapi-call-healthcheck-request	1563203040122	1563203040122	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	4		loanapi-user-registration-request	1563203040141	1563203040141	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	23		loanapi-call-healthcheck-request	1563203040141	1563203040141	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	25		loanapi-call-healthcheck-request	1563203040151	1563203040151	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	12		loanapi-userdata-retrieval-request	1563203040151	1563203040151	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	28		loanapi-call-healthcheck-request	1563203040161	1563203040161	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	27		loanapi-call-healthcheck-request	1563203040172	1563203040172	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	14		loanapi-userdata-retrieval-request	1563203040172	1563203040172	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	2		loanapi-user-registration-request	1563203040172	1563203040172	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	20		loanapi-userdata-retrieval-request	1563203040191	1563203040191	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	30		loanapi-call-healthcheck-request	1563203040191	1563203040191	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	21		loanapi-call-healthcheck-request	1563203040191	1563203040191	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	11		loanapi-userdata-retrieval-request	1563203040222	1563203040222	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	7		loanapi-user-registration-request	1563203040251	1563203040251	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	9		loanapi-user-registration-request	1563203040251	1563203040251	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	26		loanapi-call-healthcheck-request	1563203040251	1563203040251	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	10		loanapi-user-registration-request	1563203040251	1563203040251	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	29		loanapi-call-healthcheck-request	1563203040261	1563203040261	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	5		loanapi-user-registration-request	1563203040261	1563203040261	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	1		loanapi-user-registration-request	1563203040271	1563203040271	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	6		loanapi-user-registration-request	1563203040271	1563203040271	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	17		loanapi-userdata-retrieval-request	1563203040282	1563203040282	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	18		loanapi-userdata-retrieval-request	1563203040282	1563203040282	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	15		loanapi-userdata-retrieval-request	1563203040291	1563203040291	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	13		loanapi-userdata-retrieval-request	1563203040291	1563203040291	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	8		loanapi-user-registration-request	1563203040291	1563203040291	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	4		loanapi-user-registration-request	1563203040311	1563203040311	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	12		loanapi-userdata-retrieval-request	1563203040311	1563203040311	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	14		loanapi-userdata-retrieval-request	1563203040311	1563203040311	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	24		loanapi-call-healthcheck-request	1563203040321	1563203040321	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	19		loanapi-userdata-retrieval-request	1563203040321	1563203040321	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	28		loanapi-call-healthcheck-request	1563203040334	1563203040334	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	22		loanapi-call-healthcheck-request	1563203040334	1563203040334	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	3		loanapi-user-registration-request	1563203040351	1563203040351	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	23		loanapi-call-healthcheck-request	1563203040362	1563203040362	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	11		loanapi-userdata-retrieval-request	1563203040362	1563203040362	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	16		loanapi-userdata-retrieval-request	1563203040371	1563203040371	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	5		loanapi-user-registration-request	1563203040381	1563203040381	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	30		loanapi-call-healthcheck-request	1563203040391	1563203040391	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	1		loanapi-user-registration-request	1563203040391	1563203040391	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	27		loanapi-call-healthcheck-request	1563203040391	1563203040391	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	2		loanapi-user-registration-request	1563203040391	1563203040391	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	21		loanapi-call-healthcheck-request	1563203040401	1563203040401	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	25		loanapi-call-healthcheck-request	1563203040401	1563203040401	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	26		loanapi-call-healthcheck-request	1563203040401	1563203040401	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	29		loanapi-call-healthcheck-request	1563203040431	1563203040431	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	4		loanapi-user-registration-request	1563203040431	1563203040431	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	13		loanapi-userdata-retrieval-request	1563203040441	1563203040441	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	20		loanapi-userdata-retrieval-request	1563203040441	1563203040441	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	22		loanapi-call-healthcheck-request	1563203040441	1563203040441	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	11		loanapi-userdata-retrieval-request	1563203040471	1563203040471	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	23		loanapi-call-healthcheck-request	1563203040471	1563203040471	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	6		loanapi-user-registration-request	1563203040491	1563203040491	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	27		loanapi-call-healthcheck-request	1563203040501	1563203040501	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	12		loanapi-userdata-retrieval-request	1563203040501	1563203040501	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	9		loanapi-user-registration-request	1563203040501	1563203040501	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	18		loanapi-userdata-retrieval-request	1563203040501	1563203040501	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	1		loanapi-user-registration-request	1563203040501	1563203040501	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	17		loanapi-userdata-retrieval-request	1563203040512	1563203040512	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	3		loanapi-user-registration-request	1563203040512	1563203040512	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	10		loanapi-user-registration-request	1563203040512	1563203040512	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	7		loanapi-user-registration-request	1563203040521	1563203040521	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	15		loanapi-userdata-retrieval-request	1563203040533	1563203040533	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	8		loanapi-user-registration-request	1563203040541	1563203040541	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	19		loanapi-userdata-retrieval-request	1563203040552	1563203040552	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	14		loanapi-userdata-retrieval-request	1563203040561	1563203040561	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	30		loanapi-call-healthcheck-request	1563203040571	1563203040571	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	2		loanapi-user-registration-request	1563203040581	1563203040581	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	16		loanapi-userdata-retrieval-request	1563203040581	1563203040581	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	28		loanapi-call-healthcheck-request	1563203040592	1563203040592	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	5		loanapi-user-registration-request	1563203040592	1563203040592	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	25		loanapi-call-healthcheck-request	1563203040592	1563203040592	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	4		loanapi-user-registration-request	1563203040601	1563203040601	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	24		loanapi-call-healthcheck-request	1563203040611	1563203040611	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	23		loanapi-call-healthcheck-request	1563203040611	1563203040611	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	1		loanapi-user-registration-request	1563203040661	1563203040661	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	3		loanapi-user-registration-request	1563203040661	1563203040661	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	29		loanapi-call-healthcheck-request	1563203040661	1563203040661	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	21		loanapi-call-healthcheck-request	1563203040671	1563203040671	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	10		loanapi-user-registration-request	1563203040671	1563203040671	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	26		loanapi-call-healthcheck-request	1563203040681	1563203040681	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	13		loanapi-userdata-retrieval-request	1563203040691	1563203040691	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	11		loanapi-userdata-retrieval-request	1563203040702	1563203040702	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	22		loanapi-call-healthcheck-request	1563203040702	1563203040702	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	16		loanapi-userdata-retrieval-request	1563203040702	1563203040702	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	9		loanapi-user-registration-request	1563203040711	1563203040711	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	28		loanapi-call-healthcheck-request	1563203040721	1563203040721	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	6		loanapi-user-registration-request	1563203040721	1563203040721	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	2		loanapi-user-registration-request	1563203040721	1563203040721	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	30		loanapi-call-healthcheck-request	1563203040721	1563203040721	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	7		loanapi-user-registration-request	1563203040731	1563203040731	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	12		loanapi-userdata-retrieval-request	1563203040742	1563203040742	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	18		loanapi-userdata-retrieval-request	1563203040742	1563203040742	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	20		loanapi-userdata-retrieval-request	1563203040742	1563203040742	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	5		loanapi-user-registration-request	1563203040761	1563203040761	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	15		loanapi-userdata-retrieval-request	1563203040761	1563203040761	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	4		loanapi-user-registration-request	1563203040761	1563203040761	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	8		loanapi-user-registration-request	1563203040771	1563203040771	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	25		loanapi-call-healthcheck-request	1563203040771	1563203040771	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	27		loanapi-call-healthcheck-request	1563203040771	1563203040771	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	23		loanapi-call-healthcheck-request	1563203040771	1563203040771	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	29		loanapi-call-healthcheck-request	1563203040782	1563203040782	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	14		loanapi-userdata-retrieval-request	1563203040782	1563203040782	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	24		loanapi-call-healthcheck-request	1563203040782	1563203040782	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	19		loanapi-userdata-retrieval-request	1563203040782	1563203040782	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	17		loanapi-userdata-retrieval-request	1563203040811	1563203040811	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	10		loanapi-user-registration-request	1563203040811	1563203040811	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	26		loanapi-call-healthcheck-request	1563203040811	1563203040811	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	21		loanapi-call-healthcheck-request	1563203040821	1563203040821	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	7		loanapi-user-registration-request	1563203040842	1563203040842	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	2		loanapi-user-registration-request	1563203040871	1563203040871	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	5		loanapi-user-registration-request	1563203040881	1563203040881	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	22		loanapi-call-healthcheck-request	1563203040891	1563203040891	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	4		loanapi-user-registration-request	1563203040902	1563203040902	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	1		loanapi-user-registration-request	1563203040902	1563203040902	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	14		loanapi-userdata-retrieval-request	1563203040912	1563203040912	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	25		loanapi-call-healthcheck-request	1563203040912	1563203040912	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	28		loanapi-call-healthcheck-request	1563203040921	1563203040921	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	13		loanapi-userdata-retrieval-request	1563203040931	1563203040931	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	16		loanapi-userdata-retrieval-request	1563203040931	1563203040931	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	8		loanapi-user-registration-request	1563203040941	1563203040941	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	23		loanapi-call-healthcheck-request	1563203040952	1563203040952	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	3		loanapi-user-registration-request	1563203040961	1563203040961	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	12		loanapi-userdata-retrieval-request	1563203040961	1563203040961	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	27		loanapi-call-healthcheck-request	1563203040961	1563203040961	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	17		loanapi-userdata-retrieval-request	1563203040971	1563203040971	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	2		loanapi-user-registration-request	1563203040971	1563203040971	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	6		loanapi-user-registration-request	1563203040981	1563203040981	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	15		loanapi-userdata-retrieval-request	1563203040981	1563203040981	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	11		loanapi-userdata-retrieval-request	1563203040982	1563203040982	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	9		loanapi-user-registration-request	1563203040981	1563203040981	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	20		loanapi-userdata-retrieval-request	1563203040992	1563203040992	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	18		loanapi-userdata-retrieval-request	1563203041002	1563203041002	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	19		loanapi-userdata-retrieval-request	1563203041002	1563203041002	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	30		loanapi-call-healthcheck-request	1563203041021	1563203041021	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	14		loanapi-userdata-retrieval-request	1563203041021	1563203041021	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	29		loanapi-call-healthcheck-request	1563203041031	1563203041031	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	24		loanapi-call-healthcheck-request	1563203041031	1563203041031	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	7		loanapi-user-registration-request	1563203041061	1563203041061	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	26		loanapi-call-healthcheck-request	1563203041081	1563203041081	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	16		loanapi-userdata-retrieval-request	1563203041081	1563203041081	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	1		loanapi-user-registration-request	1563203041091	1563203041091	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	25		loanapi-call-healthcheck-request	1563203041091	1563203041091	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	27		loanapi-call-healthcheck-request	1563203041102	1563203041102	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	28		loanapi-call-healthcheck-request	1563203041102	1563203041102	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	21		loanapi-call-healthcheck-request	1563203041102	1563203041102	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	10		loanapi-user-registration-request	1563203041102	1563203041102	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	22		loanapi-call-healthcheck-request	1563203041121	1563203041121	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	3		loanapi-user-registration-request	1563203041121	1563203041121	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	5		loanapi-user-registration-request	1563203041131	1563203041131	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	12		loanapi-userdata-retrieval-request	1563203041131	1563203041131	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	2		loanapi-user-registration-request	1563203041152	1563203041152	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	23		loanapi-call-healthcheck-request	1563203041161	1563203041161	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	24		loanapi-call-healthcheck-request	1563203041181	1563203041181	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	14		loanapi-userdata-retrieval-request	1563203041191	1563203041191	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	16		loanapi-userdata-retrieval-request	1563203041191	1563203041191	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	13		loanapi-userdata-retrieval-request	1563203041201	1563203041201	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	19		loanapi-userdata-retrieval-request	1563203041202	1563203041202	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	20		loanapi-userdata-retrieval-request	1563203041202	1563203041202	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	18		loanapi-userdata-retrieval-request	1563203041202	1563203041202	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	4		loanapi-user-registration-request	1563203041201	1563203041201	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	9		loanapi-user-registration-request	1563203041212	1563203041212	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	25		loanapi-call-healthcheck-request	1563203041212	1563203041212	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	10		loanapi-user-registration-request	1563203041212	1563203041212	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	8		loanapi-user-registration-request	1563203041241	1563203041241	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	11		loanapi-userdata-retrieval-request	1563203041241	1563203041241	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	6		loanapi-user-registration-request	1563203041241	1563203041241	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	29		loanapi-call-healthcheck-request	1563203041241	1563203041241	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	15		loanapi-userdata-retrieval-request	1563203041241	1563203041241	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	30		loanapi-call-healthcheck-request	1563203041251	1563203041251	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	17		loanapi-userdata-retrieval-request	1563203041271	1563203041271	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	12		loanapi-userdata-retrieval-request	1563203041301	1563203041301	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	22		loanapi-call-healthcheck-request	1563203041301	1563203041301	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	14		loanapi-userdata-retrieval-request	1563203041311	1563203041311	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	27		loanapi-call-healthcheck-request	1563203041311	1563203041311	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	23		loanapi-call-healthcheck-request	1563203041322	1563203041322	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	3		loanapi-user-registration-request	1563203041322	1563203041322	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	26		loanapi-call-healthcheck-request	1563203041322	1563203041322	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	7		loanapi-user-registration-request	1563203041331	1563203041331	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	21		loanapi-call-healthcheck-request	1563203041331	1563203041331	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	2		loanapi-user-registration-request	1563203041351	1563203041351	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	28		loanapi-call-healthcheck-request	1563203041371	1563203041371	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	1		loanapi-user-registration-request	1563203041371	1563203041371	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	16		loanapi-userdata-retrieval-request	1563203041382	1563203041382	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	8		loanapi-user-registration-request	1563203041382	1563203041382	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	11		loanapi-userdata-retrieval-request	1563203041391	1563203041391	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	25		loanapi-call-healthcheck-request	1563203041401	1563203041401	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	19		loanapi-userdata-retrieval-request	1563203041401	1563203041401	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	20		loanapi-userdata-retrieval-request	1563203041411	1563203041411	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	6		loanapi-user-registration-request	1563203041421	1563203041421	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	10		loanapi-user-registration-request	1563203041421	1563203041421	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	17		loanapi-userdata-retrieval-request	1563203041442	1563203041442	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	4		loanapi-user-registration-request	1563203041442	1563203041442	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	3		loanapi-user-registration-request	1563203041442	1563203041442	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	12		loanapi-userdata-retrieval-request	1563203041442	1563203041442	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	5		loanapi-user-registration-request	1563203041451	1563203041451	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	15		loanapi-userdata-retrieval-request	1563203041471	1563203041471	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	18		loanapi-userdata-retrieval-request	1563203041481	1563203041481	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	26		loanapi-call-healthcheck-request	1563203041481	1563203041481	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	9		loanapi-user-registration-request	1563203041481	1563203041481	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	30		loanapi-call-healthcheck-request	1563203041481	1563203041481	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	24		loanapi-call-healthcheck-request	1563203041481	1563203041481	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	1		loanapi-user-registration-request	1563203041492	1563203041492	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	13		loanapi-userdata-retrieval-request	1563203041492	1563203041492	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	28		loanapi-call-healthcheck-request	1563203041501	1563203041501	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	29		loanapi-call-healthcheck-request	1563203041511	1563203041511	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	21		loanapi-call-healthcheck-request	1563203041511	1563203041511	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	2		loanapi-user-registration-request	1563203041521	1563203041521	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	22		loanapi-call-healthcheck-request	1563203041531	1563203041531	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	11		loanapi-userdata-retrieval-request	1563203041552	1563203041552	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	7		loanapi-user-registration-request	1563203041552	1563203041552	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	8		loanapi-user-registration-request	1563203041561	1563203041561	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	23		loanapi-call-healthcheck-request	1563203041561	1563203041561	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	16		loanapi-userdata-retrieval-request	1563203041561	1563203041561	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	27		loanapi-call-healthcheck-request	1563203041591	1563203041591	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	4		loanapi-user-registration-request	1563203041601	1563203041601	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	12		loanapi-userdata-retrieval-request	1563203041601	1563203041601	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	14		loanapi-userdata-retrieval-request	1563203041612	1563203041612	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	18		loanapi-userdata-retrieval-request	1563203041621	1563203041621	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	15		loanapi-userdata-retrieval-request	1563203041621	1563203041621	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	17		loanapi-userdata-retrieval-request	1563203041621	1563203041621	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	29		loanapi-call-healthcheck-request	1563203041621	1563203041621	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	30		loanapi-call-healthcheck-request	1563203041631	1563203041631	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	20		loanapi-userdata-retrieval-request	1563203041631	1563203041631	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	26		loanapi-call-healthcheck-request	1563203041631	1563203041631	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	9		loanapi-user-registration-request	1563203041641	1563203041641	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	21		loanapi-call-healthcheck-request	1563203041641	1563203041641	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	10		loanapi-user-registration-request	1563203041651	1563203041651	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	24		loanapi-call-healthcheck-request	1563203041651	1563203041651	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	8		loanapi-user-registration-request	1563203041681	1563203041681	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	19		loanapi-userdata-retrieval-request	1563203041681	1563203041681	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	6		loanapi-user-registration-request	1563203041681	1563203041681	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	25		loanapi-call-healthcheck-request	1563203041691	1563203041691	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	3		loanapi-user-registration-request	1563203041691	1563203041691	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	22		loanapi-call-healthcheck-request	1563203041691	1563203041691	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	11		loanapi-userdata-retrieval-request	1563203041701	1563203041701	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	1		loanapi-user-registration-request	1563203041712	1563203041712	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	7		loanapi-user-registration-request	1563203041712	1563203041712	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	12		loanapi-userdata-retrieval-request	1563203041722	1563203041722	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	16		loanapi-userdata-retrieval-request	1563203041731	1563203041731	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	29		loanapi-call-healthcheck-request	1563203041731	1563203041731	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	5		loanapi-user-registration-request	1563203041741	1563203041741	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	26		loanapi-call-healthcheck-request	1563203041772	1563203041772	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	2		loanapi-user-registration-request	1563203041781	1563203041781	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	13		loanapi-userdata-retrieval-request	1563203041781	1563203041781	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	28		loanapi-call-healthcheck-request	1563203041781	1563203041781	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	6		loanapi-user-registration-request	1563203041791	1563203041791	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	9		loanapi-user-registration-request	1563203041801	1563203041801	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	4		loanapi-user-registration-request	1563203041801	1563203041801	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	7		loanapi-user-registration-request	1563203041811	1563203041811	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	3		loanapi-user-registration-request	1563203041822	1563203041822	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	27		loanapi-call-healthcheck-request	1563203041822	1563203041822	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	8		loanapi-user-registration-request	1563203041822	1563203041822	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	10		loanapi-user-registration-request	1563203041831	1563203041831	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	23		loanapi-call-healthcheck-request	1563203041831	1563203041831	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	22		loanapi-call-healthcheck-request	1563203041831	1563203041831	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	20		loanapi-userdata-retrieval-request	1563203041831	1563203041831	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	17		loanapi-userdata-retrieval-request	1563203041831	1563203041831	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	11		loanapi-userdata-retrieval-request	1563203041861	1563203041861	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	15		loanapi-userdata-retrieval-request	1563203041861	1563203041861	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	24		loanapi-call-healthcheck-request	1563203041872	1563203041872	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	18		loanapi-userdata-retrieval-request	1563203041872	1563203041872	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	30		loanapi-call-healthcheck-request	1563203041872	1563203041872	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	21		loanapi-call-healthcheck-request	1563203041872	1563203041872	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	16		loanapi-userdata-retrieval-request	1563203041891	1563203041891	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	14		loanapi-userdata-retrieval-request	1563203041891	1563203041891	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	25		loanapi-call-healthcheck-request	1563203041911	1563203041911	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	5		loanapi-user-registration-request	1563203041922	1563203041922	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	28		loanapi-call-healthcheck-request	1563203041922	1563203041922	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	13		loanapi-userdata-retrieval-request	1563203041922	1563203041922	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	12		loanapi-userdata-retrieval-request	1563203041932	1563203041932	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	17		loanapi-userdata-retrieval-request	1563203041941	1563203041941	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	19		loanapi-userdata-retrieval-request	1563203041951	1563203041951	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	1		loanapi-user-registration-request	1563203041982	1563203041982	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	2		loanapi-user-registration-request	1563203041991	1563203041991	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	22		loanapi-call-healthcheck-request	1563203041991	1563203041991	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	23		loanapi-call-healthcheck-request	1563203042001	1563203042001	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	15		loanapi-userdata-retrieval-request	1563203042011	1563203042011	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	29		loanapi-call-healthcheck-request	1563203042021	1563203042021	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	7		loanapi-user-registration-request	1563203042021	1563203042021	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	9		loanapi-user-registration-request	1563203042032	1563203042032	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	14		loanapi-userdata-retrieval-request	1563203042032	1563203042032	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	6		loanapi-user-registration-request	1563203042051	1563203042051	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	27		loanapi-call-healthcheck-request	1563203042051	1563203042051	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	21		loanapi-call-healthcheck-request	1563203042061	1563203042061	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	24		loanapi-call-healthcheck-request	1563203042061	1563203042061	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	26		loanapi-call-healthcheck-request	1563203042061	1563203042061	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	12		loanapi-userdata-retrieval-request	1563203042061	1563203042061	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	3		loanapi-user-registration-request	1563203042071	1563203042071	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	16		loanapi-userdata-retrieval-request	1563203042082	1563203042082	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	4		loanapi-user-registration-request	1563203042091	1563203042091	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	11		loanapi-userdata-retrieval-request	1563203042091	1563203042091	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	19		loanapi-userdata-retrieval-request	1563203042091	1563203042091	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	10		loanapi-user-registration-request	1563203042111	1563203042111	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	20		loanapi-userdata-retrieval-request	1563203042111	1563203042111	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	30		loanapi-call-healthcheck-request	1563203042111	1563203042111	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	25		loanapi-call-healthcheck-request	1563203042121	1563203042121	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	8		loanapi-user-registration-request	1563203042121	1563203042121	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	5		loanapi-user-registration-request	1563203042131	1563203042131	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	23		loanapi-call-healthcheck-request	1563203042131	1563203042131	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	13		loanapi-userdata-retrieval-request	1563203042134	1563203042134	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	22		loanapi-call-healthcheck-request	1563203042142	1563203042142	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	18		loanapi-userdata-retrieval-request	1563203042171	1563203042171	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	3		loanapi-user-registration-request	1563203042171	1563203042171	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	1		loanapi-user-registration-request	1563203042192	1563203042192	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	17		loanapi-userdata-retrieval-request	1563203042201	1563203042201	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	21		loanapi-call-healthcheck-request	1563203042201	1563203042201	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	26		loanapi-call-healthcheck-request	1563203042201	1563203042201	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	14		loanapi-userdata-retrieval-request	1563203042211	1563203042211	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	28		loanapi-call-healthcheck-request	1563203042221	1563203042221	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	11		loanapi-userdata-retrieval-request	1563203042242	1563203042242	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	15		loanapi-userdata-retrieval-request	1563203042242	1563203042242	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	8		loanapi-user-registration-request	1563203042251	1563203042251	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	29		loanapi-call-healthcheck-request	1563203042251	1563203042251	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	19		loanapi-userdata-retrieval-request	1563203042261	1563203042261	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	10		loanapi-user-registration-request	1563203042261	1563203042261	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	23		loanapi-call-healthcheck-request	1563203042261	1563203042261	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	27		loanapi-call-healthcheck-request	1563203042261	1563203042261	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	4		loanapi-user-registration-request	1563203042261	1563203042261	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	7		loanapi-user-registration-request	1563203042281	1563203042281	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	12		loanapi-userdata-retrieval-request	1563203042281	1563203042281	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	25		loanapi-call-healthcheck-request	1563203042281	1563203042281	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	2		loanapi-user-registration-request	1563203042291	1563203042291	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	16		loanapi-userdata-retrieval-request	1563203042291	1563203042291	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	24		loanapi-call-healthcheck-request	1563203042291	1563203042291	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	9		loanapi-user-registration-request	1563203042291	1563203042291	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	6		loanapi-user-registration-request	1563203042311	1563203042311	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	3		loanapi-user-registration-request	1563203042321	1563203042321	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	21		loanapi-call-healthcheck-request	1563203042331	1563203042331	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	18		loanapi-userdata-retrieval-request	1563203042332	1563203042332	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	26		loanapi-call-healthcheck-request	1563203042341	1563203042341	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	20		loanapi-userdata-retrieval-request	1563203042341	1563203042341	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	4		loanapi-user-registration-request	1563203042362	1563203042362	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	14		loanapi-userdata-retrieval-request	1563203042371	1563203042371	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	11		loanapi-userdata-retrieval-request	1563203042371	1563203042371	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	30		loanapi-call-healthcheck-request	1563203042381	1563203042381	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	19		loanapi-userdata-retrieval-request	1563203042391	1563203042391	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	10		loanapi-user-registration-request	1563203042391	1563203042391	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	5		loanapi-user-registration-request	1563203042391	1563203042391	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	7		loanapi-user-registration-request	1563203042391	1563203042391	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	22		loanapi-call-healthcheck-request	1563203042391	1563203042391	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	13		loanapi-userdata-retrieval-request	1563203042391	1563203042391	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	29		loanapi-call-healthcheck-request	1563203042411	1563203042411	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	17		loanapi-userdata-retrieval-request	1563203042421	1563203042421	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	28		loanapi-call-healthcheck-request	1563203042433	1563203042433	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	21		loanapi-call-healthcheck-request	1563203042452	1563203042452	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	3		loanapi-user-registration-request	1563203042452	1563203042452	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	15		loanapi-userdata-retrieval-request	1563203042461	1563203042461	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	24		loanapi-call-healthcheck-request	1563203042461	1563203042461	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	2		loanapi-user-registration-request	1563203042471	1563203042471	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	1		loanapi-user-registration-request	1563203042471	1563203042471	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	8		loanapi-user-registration-request	1563203042471	1563203042471	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	18		loanapi-userdata-retrieval-request	1563203042471	1563203042471	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	20		loanapi-userdata-retrieval-request	1563203042481	1563203042481	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	6		loanapi-user-registration-request	1563203042491	1563203042491	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	9		loanapi-user-registration-request	1563203042501	1563203042501	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	26		loanapi-call-healthcheck-request	1563203042521	1563203042521	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	16		loanapi-userdata-retrieval-request	1563203042521	1563203042521	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	27		loanapi-call-healthcheck-request	1563203042531	1563203042531	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	12		loanapi-userdata-retrieval-request	1563203042541	1563203042541	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	5		loanapi-user-registration-request	1563203042551	1563203042551	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	13		loanapi-userdata-retrieval-request	1563203042551	1563203042551	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	23		loanapi-call-healthcheck-request	1563203042551	1563203042551	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	30		loanapi-call-healthcheck-request	1563203042551	1563203042551	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	25		loanapi-call-healthcheck-request	1563203042562	1563203042562	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	14		loanapi-userdata-retrieval-request	1563203042581	1563203042581	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	29		loanapi-call-healthcheck-request	1563203042581	1563203042581	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	8		loanapi-user-registration-request	1563203042581	1563203042581	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	19		loanapi-userdata-retrieval-request	1563203042581	1563203042581	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	24		loanapi-call-healthcheck-request	1563203042581	1563203042581	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	15		loanapi-userdata-retrieval-request	1563203042601	1563203042601	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	3		loanapi-user-registration-request	1563203042601	1563203042601	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	9		loanapi-user-registration-request	1563203042621	1563203042621	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	11		loanapi-userdata-retrieval-request	1563203042621	1563203042621	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	6		loanapi-user-registration-request	1563203042632	1563203042632	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	17		loanapi-userdata-retrieval-request	1563203042632	1563203042632	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	26		loanapi-call-healthcheck-request	1563203042632	1563203042632	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	4		loanapi-user-registration-request	1563203042651	1563203042651	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	22		loanapi-call-healthcheck-request	1563203042651	1563203042651	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	27		loanapi-call-healthcheck-request	1563203042661	1563203042661	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	1		loanapi-user-registration-request	1563203042671	1563203042671	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	7		loanapi-user-registration-request	1563203042692	1563203042692	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	29		loanapi-call-healthcheck-request	1563203042692	1563203042692	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	30		loanapi-call-healthcheck-request	1563203042692	1563203042692	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	28		loanapi-call-healthcheck-request	1563203042692	1563203042692	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	16		loanapi-userdata-retrieval-request	1563203042692	1563203042692	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	10		loanapi-user-registration-request	1563203042692	1563203042692	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	21		loanapi-call-healthcheck-request	1563203042701	1563203042701	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	2		loanapi-user-registration-request	1563203042711	1563203042711	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	9		loanapi-user-registration-request	1563203042733	1563203042733	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	18		loanapi-userdata-retrieval-request	1563203042741	1563203042741	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	5		loanapi-user-registration-request	1563203042741	1563203042741	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	23		loanapi-call-healthcheck-request	1563203042741	1563203042741	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	14		loanapi-userdata-retrieval-request	1563203042741	1563203042741	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	13		loanapi-userdata-retrieval-request	1563203042741	1563203042741	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	3		loanapi-user-registration-request	1563203042752	1563203042752	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	20		loanapi-userdata-retrieval-request	1563203042761	1563203042761	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	8		loanapi-user-registration-request	1563203042761	1563203042761	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	6		loanapi-user-registration-request	1563203042761	1563203042761	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	25		loanapi-call-healthcheck-request	1563203042791	1563203042791	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	10		loanapi-user-registration-request	1563203042791	1563203042791	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	12		loanapi-userdata-retrieval-request	1563203042802	1563203042802	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	29		loanapi-call-healthcheck-request	1563203042802	1563203042802	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	16		loanapi-userdata-retrieval-request	1563203042811	1563203042811	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	26		loanapi-call-healthcheck-request	1563203042821	1563203042821	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	4		loanapi-user-registration-request	1563203042831	1563203042831	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	15		loanapi-userdata-retrieval-request	1563203042841	1563203042841	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	2		loanapi-user-registration-request	1563203042841	1563203042841	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	19		loanapi-userdata-retrieval-request	1563203042852	1563203042852	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	3		loanapi-user-registration-request	1563203042852	1563203042852	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	27		loanapi-call-healthcheck-request	1563203042861	1563203042861	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	23		loanapi-call-healthcheck-request	1563203042861	1563203042861	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	24		loanapi-call-healthcheck-request	1563203042861	1563203042861	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	13		loanapi-userdata-retrieval-request	1563203042871	1563203042871	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	17		loanapi-userdata-retrieval-request	1563203042912	1563203042912	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	5		loanapi-user-registration-request	1563203042912	1563203042912	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	22		loanapi-call-healthcheck-request	1563203042921	1563203042921	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	16		loanapi-userdata-retrieval-request	1563203042921	1563203042921	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	1		loanapi-user-registration-request	1563203042921	1563203042921	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	21		loanapi-call-healthcheck-request	1563203042921	1563203042921	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	11		loanapi-userdata-retrieval-request	1563203042921	1563203042921	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	10		loanapi-user-registration-request	1563203042931	1563203042931	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	14		loanapi-userdata-retrieval-request	1563203042931	1563203042931	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	30		loanapi-call-healthcheck-request	1563203042941	1563203042941	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	9		loanapi-user-registration-request	1563203042962	1563203042962	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	26		loanapi-call-healthcheck-request	1563203042962	1563203042962	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	8		loanapi-user-registration-request	1563203042962	1563203042962	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	7		loanapi-user-registration-request	1563203042971	1563203042971	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	20		loanapi-userdata-retrieval-request	1563203042971	1563203042971	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	6		loanapi-user-registration-request	1563203042981	1563203042981	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	28		loanapi-call-healthcheck-request	1563203042991	1563203042991	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	15		loanapi-userdata-retrieval-request	1563203043002	1563203043002	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	18		loanapi-userdata-retrieval-request	1563203043001	1563203043001	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	12		loanapi-userdata-retrieval-request	1563203043011	1563203043011	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	4		loanapi-user-registration-request	1563203043021	1563203043021	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	25		loanapi-call-healthcheck-request	1563203043021	1563203043021	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	29		loanapi-call-healthcheck-request	1563203043041	1563203043041	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	17		loanapi-userdata-retrieval-request	1563203043071	1563203043071	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	23		loanapi-call-healthcheck-request	1563203043071	1563203043071	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	7		loanapi-user-registration-request	1563203043081	1563203043081	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	14		loanapi-userdata-retrieval-request	1563203043081	1563203043081	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	13		loanapi-userdata-retrieval-request	1563203043091	1563203043091	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	2		loanapi-user-registration-request	1563203043091	1563203043091	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	9		loanapi-user-registration-request	1563203043101	1563203043101	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-user-registration-scenario	1	END	1563203037967	1563203043104
+REQUEST	loanapi-userdata-retrieval-scenario	19		loanapi-userdata-retrieval-request	1563203043111	1563203043111	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	16		loanapi-userdata-retrieval-request	1563203043111	1563203043111	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	26		loanapi-call-healthcheck-request	1563203043111	1563203043111	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	24		loanapi-call-healthcheck-request	1563203043111	1563203043111	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	8		loanapi-user-registration-request	1563203043131	1563203043131	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-userdata-retrieval-scenario	11	END	1563203038059	1563203043141
+REQUEST	loanapi-call-healthcheck-scenario	28		loanapi-call-healthcheck-request	1563203043141	1563203043141	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	5		loanapi-user-registration-request	1563203043141	1563203043141	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	30		loanapi-call-healthcheck-request	1563203043141	1563203043141	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	18		loanapi-userdata-retrieval-request	1563203043141	1563203043141	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-userdata-retrieval-scenario	12	END	1563203038063	1563203043151
+USER	loanapi-call-healthcheck-scenario	21	END	1563203038073	1563203043151
+REQUEST	loanapi-user-registration-scenario	3		loanapi-user-registration-request	1563203043151	1563203043151	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	27		loanapi-call-healthcheck-request	1563203043162	1563203043162	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	20		loanapi-userdata-retrieval-request	1563203043162	1563203043162	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	10		loanapi-user-registration-request	1563203043181	1563203043181	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	4		loanapi-user-registration-request	1563203043181	1563203043181	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-call-healthcheck-scenario	22	END	1563203038081	1563203043191
+REQUEST	loanapi-userdata-retrieval-scenario	14		loanapi-userdata-retrieval-request	1563203043211	1563203043211	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-user-registration-scenario	2	END	1563203038175	1563203043222
+USER	loanapi-call-healthcheck-scenario	23	END	1563203038191	1563203043231
+REQUEST	loanapi-call-healthcheck-scenario	24		loanapi-call-healthcheck-request	1563203043231	1563203043231	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	7		loanapi-user-registration-request	1563203043231	1563203043231	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	26		loanapi-call-healthcheck-request	1563203043232	1563203043232	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	6		loanapi-user-registration-request	1563203043241	1563203043241	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	30		loanapi-call-healthcheck-request	1563203043272	1563203043272	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-user-registration-scenario	3	END	1563203038270	1563203043281
+REQUEST	loanapi-userdata-retrieval-scenario	16		loanapi-userdata-retrieval-request	1563203043281	1563203043281	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	8		loanapi-user-registration-request	1563203043291	1563203043291	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	15		loanapi-userdata-retrieval-request	1563203043291	1563203043291	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	25		loanapi-call-healthcheck-request	1563203043291	1563203043291	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	5		loanapi-user-registration-request	1563203043301	1563203043301	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	10		loanapi-user-registration-request	1563203043301	1563203043301	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-userdata-retrieval-scenario	13	END	1563203038182	1563203043311
+REQUEST	loanapi-userdata-retrieval-scenario	20		loanapi-userdata-retrieval-request	1563203043311	1563203043311	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	29		loanapi-call-healthcheck-request	1563203043311	1563203043311	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	9		loanapi-user-registration-request	1563203043332	1563203043332	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	27		loanapi-call-healthcheck-request	1563203043332	1563203043332	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-userdata-retrieval-scenario	14	END	1563203038282	1563203043341
+REQUEST	loanapi-call-healthcheck-scenario	28		loanapi-call-healthcheck-request	1563203043361	1563203043361	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-call-healthcheck-scenario	24	END	1563203038291	1563203043371
+REQUEST	loanapi-userdata-retrieval-scenario	17		loanapi-userdata-retrieval-request	1563203043371	1563203043371	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	19		loanapi-userdata-retrieval-request	1563203043371	1563203043371	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	18		loanapi-userdata-retrieval-request	1563203043392	1563203043392	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-user-registration-scenario	4	END	1563203038372	1563203043401
+REQUEST	loanapi-user-registration-scenario	7		loanapi-user-registration-request	1563203043411	1563203043411	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	26		loanapi-call-healthcheck-request	1563203043431	1563203043431	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	20		loanapi-userdata-retrieval-request	1563203043431	1563203043431	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	6		loanapi-user-registration-request	1563203043461	1563203043461	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-userdata-retrieval-scenario	15	END	1563203038381	1563203043471
+USER	loanapi-user-registration-scenario	5	END	1563203038471	1563203043481
+REQUEST	loanapi-userdata-retrieval-scenario	16		loanapi-userdata-retrieval-request	1563203043481	1563203043481	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-userdata-retrieval-scenario	16	END	1563203038481	1563203043483
+USER	loanapi-call-healthcheck-scenario	25	END	1563203038411	1563203043491
+REQUEST	loanapi-user-registration-scenario	8		loanapi-user-registration-request	1563203043491	1563203043491	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	30		loanapi-call-healthcheck-request	1563203043491	1563203043491	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	19		loanapi-userdata-retrieval-request	1563203043512	1563203043512	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	28		loanapi-call-healthcheck-request	1563203043512	1563203043512	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	10		loanapi-user-registration-request	1563203043541	1563203043541	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	9		loanapi-user-registration-request	1563203043562	1563203043562	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-user-registration-scenario	7		loanapi-user-registration-request	1563203043562	1563203043562	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	27		loanapi-call-healthcheck-request	1563203043562	1563203043562	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	29		loanapi-call-healthcheck-request	1563203043581	1563203043581	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-userdata-retrieval-scenario	17	END	1563203038581	1563203043601
+USER	loanapi-call-healthcheck-scenario	26	END	1563203038511	1563203043622
+USER	loanapi-user-registration-scenario	6	END	1563203038575	1563203043622
+REQUEST	loanapi-user-registration-scenario	8		loanapi-user-registration-request	1563203043631	1563203043631	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	20		loanapi-userdata-retrieval-request	1563203043672	1563203043672	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-call-healthcheck-scenario	30		loanapi-call-healthcheck-request	1563203043681	1563203043681	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	18		loanapi-userdata-retrieval-request	1563203043681	1563203043681	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-userdata-retrieval-scenario	18	END	1563203038681	1563203043683
+REQUEST	loanapi-user-registration-scenario	10		loanapi-user-registration-request	1563203043711	1563203043711	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+REQUEST	loanapi-userdata-retrieval-scenario	19		loanapi-userdata-retrieval-request	1563203043711	1563203043711	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-user-registration-scenario	7	END	1563203038671	1563203043721
+USER	loanapi-call-healthcheck-scenario	27	END	1563203038611	1563203043741
+USER	loanapi-call-healthcheck-scenario	28	END	1563203038711	1563203043771
+REQUEST	loanapi-call-healthcheck-scenario	30		loanapi-call-healthcheck-request	1563203043791	1563203043791	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-user-registration-scenario	8	END	1563203038771	1563203043801
+REQUEST	loanapi-user-registration-scenario	9		loanapi-user-registration-request	1563203043832	1563203043832	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-call-healthcheck-scenario	29	END	1563203038811	1563203043851
+USER	loanapi-userdata-retrieval-scenario	19	END	1563203038781	1563203043871
+REQUEST	loanapi-userdata-retrieval-scenario	20		loanapi-userdata-retrieval-request	1563203043881	1563203043881	KO	j.n.ConnectException: Connection refused: localhost/127.0.0.1:8081
+USER	loanapi-userdata-retrieval-scenario	20	END	1563203038881	1563203043883
+USER	loanapi-user-registration-scenario	9	END	1563203038871	1563203043971
+USER	loanapi-user-registration-scenario	10	END	1563203038971	1563203043981
+USER	loanapi-call-healthcheck-scenario	30	END	1563203038911	1563203044071
