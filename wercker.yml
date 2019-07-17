@@ -9,6 +9,9 @@ build:
       name: run gatling tests
       code: |
         ./gradlew loadTest
+
+#        generate static bug reports,
+
   - script:
       name: deploy github pages
       code: |

@@ -1,5 +1,58 @@
+//import com.github.jengelman.gradle.plugins.processes.tasks.JavaFork
+//import groovy.json.JsonSlurper
+
 ext {
     apply plugin: 'com.github.johnrengelman.processes'
+
+    /**
+     * Gatling load tests
+     */
+
+//    task startSpringBoot(type: JavaFork) {
+//        description = 'Start Spring Boot in the background.'
+//        group = 'Load Test'
+//        classpath = sourceSets.main.runtimeClasspath
+//        main = 'com.finance.homework.HomeworkApplication'
+//    }
+//    startSpringBoot.dependsOn assemble
+//
+//    task stopSpringBoot << {
+//        description = 'Stop the instance of Spring Boot that was started with \'startSpringBoot\''
+//        group = 'Load Test'
+//        startSpringBoot.processHandle.abort()
+//    }
+//
+//    task waitUntilSpringBootIsUp << {
+//        description = 'Call the /health endpoint and wait until it responds with the status UP.'
+//        group = 'Load Test'
+//        String url = 'http://localhost:8080/health'
+//        boolean success = false
+//        int count = 0
+//        while (count < 15 && !success) {
+//            println 'Trying to connect to \'' + url + '\' : Attempt number=' + count
+//            try {
+//                count += 1
+//                JsonSlurper jsonSlurper = new JsonSlurper();
+//                String responseBody = url.toURL().text
+//                println responseBody
+//                Object result = jsonSlurper.parseText(responseBody);
+//                Map jsonResult = (Map) result;
+//
+//                String status = (String) jsonResult.get('status');
+//
+//                success = (status == 'UP')
+//            }
+//            catch (all) {
+//                sleep(5 * 1000) // wait for another 5 seconds until next retry
+//            }
+//        }
+//        if (success) {
+//            println 'SUCCEFULLY Connected to \'' + url + '\''
+//        } else {
+//            println 'FAILED to Connected to \'' + url + '\''
+//        }
+//    }
+//    waitUntilSpringBootIsUp.dependsOn startSpringBoot
 
     task loadTest(type: JavaExec) {
         description = 'Load testing for Loan API'
@@ -8,7 +61,7 @@ ext {
         jvmArgs = [
                 // workaround for https://github.com/gatling/gatling/issues/2689
                 "-Dgatling.core.directory.binaries=${sourceSets.test.output.toString()}",
-                "-Dlogback.configurationFile="+"${rootDir.toString()}" + "/src/test/resources/"+"logback-gatling.groovy"
+                "-Dlogback.configurationFile=" + "${rootDir.toString()}" + "/src/test/resources/"+"logback-gatling.groovy"
         ]
         main = 'io.gatling.app.Gatling'
         args = [
@@ -17,4 +70,7 @@ ext {
                 '--binaries-folder', sourceSets.test.output.toString() // ignored because of above bug
         ]
     }
+
+//    loadTest.dependsOn waitUntilSpringBootIsUp
+//    loadTest.finalizedBy stopSpringBoot
 }

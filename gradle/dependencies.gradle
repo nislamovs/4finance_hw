@@ -32,9 +32,11 @@ ext {
         implementation        "com.zaxxer:HikariCP"
         implementation        "org.apache.commons:commons-lang3"
         implementation        "org.modelmapper:modelmapper:2.3.2"
-        implementation        'org.codehaus.groovy:groovy'
+        implementation        'org.codehaus.groovy:groovy-all:2.4.9'
 
 //Testing
+
+        testCompile('org.springframework.boot:spring-boot-starter-test')
 
         testImplementation(platform("org.junit:junit-bom:5.4.2"))
 
@@ -64,6 +66,7 @@ ext {
 //	Gatling (Load testing)
 
         compile				  "org.scala-lang:scala-library:2.12.6"
+        compile				  "net.liftweb:lift-json_2.12:3.3.0"
         testCompile 		  "io.gatling.highcharts:gatling-charts-highcharts:2.3.0"
     }
 

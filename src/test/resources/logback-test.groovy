@@ -11,7 +11,7 @@ appender("FILE", RollingFileAppender) {
                 pattern = '%d{"yyyy-MM-dd HH:mm:ss,SSS", Europe/Helsinki} %-5p [%t] %c - %msg%n'
         }
         rollingPolicy(TimeBasedRollingPolicy) {
-                fileNamePattern = '4Finance_hw_%d{dd-MM-yyyy}-%i.log'
+                fileNamePattern = '4Finance_hw_%d{dd-MM-yyyy}-%i.zip'
                 timeBasedFileNamingAndTriggeringPolicy(SizeAndTimeBasedFNATP) {
                         maxFileSize = "10MB"
                 }

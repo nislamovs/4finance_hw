@@ -1,12 +1,11 @@
-package gatling.simulations.Stuff
+package gatling.simulations.Other
 
-import io.gatling.core.structure.ScenarioBuilder
 import io.gatling.core.Predef._
+import io.gatling.core.structure.ScenarioBuilder
 import io.gatling.http.Predef._
-import scala.language.postfixOps
-import scala.Serializable
 
 import scala.concurrent.duration._
+import scala.language.postfixOps
 
 object MassHealtcheckSimulation extends Simulation {
 

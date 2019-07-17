@@ -1,0 +1,25 @@
+ext {
+    apply plugin: 'io.qameta.allure'
+
+    allure {
+        version = '2.1.1'
+
+        autoconfigure = true
+        aspectjweaver = true
+        clean = true
+
+        resultsDir = file("${buildDir}/test-results/allure-results")
+        reportDir = file("${buildDir}/test-results/allure-reports")
+
+
+        useJUnit4 {
+            version = '2.0-BETA10'
+        }
+
+        useJUnit5 {
+            version = '2.0-BETA10'
+        }
+        downloadLink = 'https://dl.bintray.com/qameta/generic/io/qameta/allure/allure/2.1.1/allure-2.1.1.zip'
+    }
+
+}

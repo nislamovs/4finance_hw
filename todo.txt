@@ -1,0 +1,5 @@
+- Make site plugin running and displaying all reports correctly
+- Deployment on Heroku
+- Make documentation in README.MD
+
+- Launching springboot app and wait until it's up and then launch loadtests [Gatling, wercker]
