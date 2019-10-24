@@ -22,7 +22,7 @@ public class ExtentionConverter {
     }
 
     public static List<ExtentionResponse> toResponse(List<ExtentionEntity> extentionEntities) {
-        return extentionEntities.stream().map(extentionEntity -> toResponse(extentionEntity)).collect(Collectors.toList());
+        return extentionEntities.stream().map(ExtentionConverter::toResponse).collect(Collectors.toList());
     }
 
     public static ExtentionEntity toEntity(ExtentionRequest extentionRequest) {

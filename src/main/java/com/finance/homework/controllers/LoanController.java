@@ -1,7 +1,6 @@
 package com.finance.homework.controllers;
 
 import com.finance.homework.controllers.documentation.LoanControllerDoc;
-import com.finance.homework.converters.LoanConverter;
 import com.finance.homework.domain.requests.LoanRequest;
 import com.finance.homework.domain.responses.LoanResponse;
 import com.finance.homework.services.LoanService;
@@ -16,6 +15,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import java.util.List;
 
+import static com.finance.homework.converters.LoanConverter.toResponse;
+
 @Slf4j
 @RestController
 @RequestMapping(value = "/api/v1/loan")
@@ -28,7 +29,7 @@ public class LoanController implements LoanControllerDoc {
     public ResponseEntity<?> getAllLoans() {
 
         log.info("Retrieving loan list for all users.");
-        return new ResponseEntity<List<LoanResponse>>(LoanConverter.toResponse(loanService.findAllLoans()), HttpStatus.OK);
+        return new ResponseEntity<List<LoanResponse>>(toResponse(loanService.findAllLoans()), HttpStatus.OK);
     }
 
     @GetMapping(value = "/{loanId}")
@@ -36,7 +37,7 @@ public class LoanController implements LoanControllerDoc {
 
         log.info("Retrieving loan by id {}.", loanId);
 
-        return new ResponseEntity<LoanResponse>(LoanConverter.toResponse(loanService.getLoanById(loanId)), HttpStatus.OK);
+        return new ResponseEntity<LoanResponse>(toResponse(loanService.getLoanById(loanId)), HttpStatus.OK);
     }
 
     @PostMapping
@@ -46,7 +47,7 @@ public class LoanController implements LoanControllerDoc {
 
         loanRequest.setIpAddress(request.getRemoteAddr());
 
-        return new ResponseEntity<LoanResponse>(LoanConverter.toResponse(loanService.createLoan(loanRequest)), HttpStatus.CREATED);
+        return new ResponseEntity<LoanResponse>(toResponse(loanService.createLoan(loanRequest)), HttpStatus.CREATED);
     }
 
     @PutMapping(value = "/{loanId}")
@@ -59,6 +60,6 @@ public class LoanController implements LoanControllerDoc {
 
         log.info("Changing loan id:{} status to: {}", loanId, status);
 
-        return new ResponseEntity<LoanResponse>(LoanConverter.toResponse(loanService.updateStatus(loanId, status)), HttpStatus.ACCEPTED);
+        return new ResponseEntity<LoanResponse>(toResponse(loanService.updateStatus(loanId, status)), HttpStatus.ACCEPTED);
     }
 }

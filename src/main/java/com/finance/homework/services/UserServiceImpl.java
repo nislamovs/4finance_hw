@@ -36,7 +36,12 @@ public class UserServiceImpl implements UserService {
         if (userRepository.existsUserEntityByEmail(userRequest.getEmail()))
             throw new UserAlreadyExistsException("User with email {" + userRequest.getEmail() + "} already exists.");
 
-        return userRepository.save(UserConverter.toEntity(userRequest));
+        UserEntity ue = new UserEntity();
+        ue = UserConverter.toEntity(userRequest);
+        ue = userRepository.save(ue);
+
+        return ue;
+//        return userRepository.save(UserConverter.toEntity(userRequest));
     }
 
     @Override

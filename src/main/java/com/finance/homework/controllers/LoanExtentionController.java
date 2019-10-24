@@ -1,7 +1,6 @@
 package com.finance.homework.controllers;
 
 import com.finance.homework.controllers.documentation.ExtentionControllerDoc;
-import com.finance.homework.converters.ExtentionConverter;
 import com.finance.homework.domain.requests.ExtentionRequest;
 import com.finance.homework.domain.responses.ExtentionResponse;
 import com.finance.homework.services.ExtentionService;
@@ -13,6 +12,8 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
+
+import static com.finance.homework.converters.ExtentionConverter.toResponse;
 
 @Slf4j
 @RestController
@@ -28,7 +29,7 @@ public class LoanExtentionController implements ExtentionControllerDoc {
 
         log.info("Retrieving extention list for all users.");
 
-        return new ResponseEntity<List<ExtentionResponse>>(ExtentionConverter.toResponse(extentionService.findAllExtentions()), HttpStatus.OK);
+        return new ResponseEntity<List<ExtentionResponse>>(toResponse(extentionService.findAllExtentions()), HttpStatus.OK);
     }
 
     @PostMapping
@@ -36,7 +37,7 @@ public class LoanExtentionController implements ExtentionControllerDoc {
 
         log.info("Extending loan : {}", extentionRequest);
 
-        return new ResponseEntity<ExtentionResponse>(ExtentionConverter.toResponse(extentionService.createExtention(extentionRequest)), HttpStatus.CREATED);
+        return new ResponseEntity<ExtentionResponse>(toResponse(extentionService.createExtention(extentionRequest)), HttpStatus.CREATED);
     }
 
     @GetMapping(value = "/{extId}")
@@ -44,6 +45,6 @@ public class LoanExtentionController implements ExtentionControllerDoc {
 
         log.info("Retrieving extention by Id {}.", extId);
 
-        return new ResponseEntity<ExtentionResponse>(ExtentionConverter.toResponse(extentionService.getExtentionById(extId)), HttpStatus.OK);
+        return new ResponseEntity<ExtentionResponse>(toResponse(extentionService.getExtentionById(extId)), HttpStatus.OK);
     }
 }

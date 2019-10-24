@@ -1,7 +1,6 @@
 package com.finance.homework.controllers;
 
 import com.finance.homework.controllers.documentation.UserControllerDoc;
-import com.finance.homework.converters.UserConverter;
 import com.finance.homework.domain.requests.UserRequest;
 import com.finance.homework.domain.responses.UserResponse;
 import com.finance.homework.services.UserService;
@@ -13,6 +12,8 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
+
+import static com.finance.homework.converters.UserConverter.toResponse;
 
 @Slf4j
 @RestController
@@ -27,7 +28,7 @@ public class UserController implements UserControllerDoc {
 
         log.info("Retrieving user list with all loans and extentions.");
 
-        return new ResponseEntity<List<UserResponse>>(UserConverter.toResponse(userService.findAllUsers()), HttpStatus.OK);
+        return new ResponseEntity<List<UserResponse>>(toResponse(userService.findAllUsers()), HttpStatus.OK);
     }
 
     @PostMapping
@@ -35,7 +36,7 @@ public class UserController implements UserControllerDoc {
 
         log.info("Registering new user: {}", userRequest);
 
-        UserResponse ur = UserConverter.toResponse(userService.createUser(userRequest));
+        UserResponse ur = toResponse(userService.createUser(userRequest));
 
         return new ResponseEntity<UserResponse>(ur , HttpStatus.CREATED);
     }
@@ -46,6 +47,6 @@ public class UserController implements UserControllerDoc {
 
         log.info("Retrieving loans with extentions by user id: {}", userId);
 
-        return new ResponseEntity<UserResponse>(UserConverter.toResponse(userService.getLoanInfoByUserId(userId)), HttpStatus.OK);
+        return new ResponseEntity<UserResponse>(toResponse(userService.getLoanInfoByUserId(userId)), HttpStatus.OK);
     }
 }

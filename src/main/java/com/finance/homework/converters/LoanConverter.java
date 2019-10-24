@@ -22,7 +22,7 @@ public class LoanConverter {
     }
 
     public static List<LoanResponse> toResponse(List<LoanEntity> loanEntities) {
-        return loanEntities.stream().map(loanEntity -> toResponse(loanEntity)).collect(Collectors.toList());
+        return loanEntities.stream().map(LoanConverter::toResponse).collect(Collectors.toList());
     }
 
     public static LoanEntity toEntity(LoanRequest loanRequest) {

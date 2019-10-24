@@ -22,7 +22,7 @@ public class UserConverter {
     }
 
     public static List<UserResponse> toResponse(List<UserEntity> userEntities) {
-        return userEntities.stream().map(userEntity -> toResponse(userEntity)).collect(Collectors.toList());
+        return userEntities.stream().map(UserConverter::toResponse).collect(Collectors.toList());
     }
 
     public static UserEntity toEntity(UserRequest userRequest) {

@@ -7,7 +7,7 @@ appender("FILE", RollingFileAppender) {
         pattern = '%d{"yyyy-MM-dd HH:mm:ss,SSS", Europe/Helsinki} %-5p [%t] %c - %msg%n'
     }
     rollingPolicy(TimeBasedRollingPolicy) {
-        fileNamePattern = '4Finance_hw_%d{dd-MM-yyyy}-%i.log.zip'
+        fileNamePattern = 'logs/4Finance_hw_%d{dd-MM-yyyy}-%i.log.zip'
         timeBasedFileNamingAndTriggeringPolicy(SizeAndTimeBasedFNATP) {
             maxFileSize = "10MB"
         }
@@ -29,5 +29,5 @@ appender("STDOUT", ConsoleAppender) {
 }
 
 root(INFO, ["FILE-ASYNC", "STDOUT"])
-logger("4Finance_hw", DEBUG)
-logger("org.springframework.web.filter.CommonsRequestLoggingFilter", DEBUG)
+//logger("4Finance_hw", DEBUG)
+//logger("org.springframework.web.filter.CommonsRequestLoggingFilter", DEBUG)
